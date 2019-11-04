@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import homeComponent from '/Users/dawn/gobbler-project/client/src/components/homeComponent.js';
 import Nav from '/Users/dawn/gobbler-project/client/src/components/navComponent.js';
 import Errors from '/Users/dawn/gobbler-project/client/src/components/errors.js';
+import Footer from "/Users/dawn/gobbler-project/client/src/components/footer.js";
 
 class App extends Component {
 
@@ -16,6 +17,7 @@ class App extends Component {
           <Route component={Errors} />
         </Switch>
       </div>
+      <Footer />
     </Router>
     )
   }
