@@ -4,6 +4,7 @@ import homeComponent from '/Users/dawn/gobbler-project/client/src/components/hom
 import Nav from '/Users/dawn/gobbler-project/client/src/components/navComponent.js';
 import Errors from '/Users/dawn/gobbler-project/client/src/components/errors.js';
 import Footer from "/Users/dawn/gobbler-project/client/src/components/footer.js";
+import Sponsors from "/Users/dawn/gobbler-project/client/src/components/sponsors.js";
 
 class App extends Component {
 
@@ -14,6 +15,7 @@ class App extends Component {
       <div className="container">
         <Switch>
           <Route exact path="/" component={homeComponent} />
+          <Route exact path="/sponsors" component={Sponsors}/>
           <Route component={Errors} />
         </Switch>
       </div>
