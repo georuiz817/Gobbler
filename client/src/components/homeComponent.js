@@ -1,5 +1,3 @@
-//functional component #1
-//home page
 import React from 'react'; 
 
 const homeComponent = () => {
@@ -17,4 +15,3 @@ const homeComponent = () => {
 }
 
 export default homeComponent
-
