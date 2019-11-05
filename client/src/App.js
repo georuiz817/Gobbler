@@ -5,6 +5,7 @@ import Nav from '/Users/dawn/gobbler-project/client/src/components/navComponent.
 import Errors from '/Users/dawn/gobbler-project/client/src/components/errors.js';
 import Footer from "/Users/dawn/gobbler-project/client/src/components/footer.js";
 import Sponsors from "/Users/dawn/gobbler-project/client/src/components/sponsors.js";
+import dishesNew from "/Users/dawn/gobbler-project/client/src/containers/dishesNew.js"
 
 class App extends Component {
 
@@ -16,6 +17,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={homeComponent} />
           <Route exact path="/sponsors" component={Sponsors}/>
+          <Route exact path="/dishesNew" component={dishesNew}/>
           <Route component={Errors} />
         </Switch>
       </div>
