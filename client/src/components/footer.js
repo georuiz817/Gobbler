@@ -1,17 +1,15 @@
 // functional component # 4
 //site footer 
 import React from 'react'
+import "/Users/dawn/gobbler-project/client/src/Css/footer.css";
 
 const Footer = () => {
     return (
-        <div>
-        <ul>
-            <li>image 1</li>
-            <li> image 2 </li> 
-            <li> image 3 </li>
-            <li> image 4 </li> 
-        </ul>
-      </div>
+      <footer class="footer">
+          <div class="footer">
+            <h3>footer</h3>
+          </div>
+       </footer>
     )
   }
 
