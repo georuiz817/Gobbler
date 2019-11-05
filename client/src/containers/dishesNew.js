@@ -27,6 +27,7 @@ export class dishesNew extends Component {
     handleSubmit = e => {
         e.preventDefault();
         this.props.addDish(this.state)
+        
       }
 
 

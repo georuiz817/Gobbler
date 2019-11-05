@@ -15,4 +15,4 @@ export const addDish = (dish) => {
         dispatch({ type: "ADD_DISH", dish })
        })
     }
-  }
+  } 
