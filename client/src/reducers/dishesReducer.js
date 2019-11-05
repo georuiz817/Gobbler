@@ -14,11 +14,17 @@ export default (state=initialState, action) => {
           ...state,
           dishes: [...state.dishes, action.dish]
         }
-        case "INDEX_DISHES":
+        case "GET_DISHES":
           return {
             ...state,
             dishes: action.dishes,
         }
+
+        case "LOADING_DISHES":
+          return {
+            ...state,
+            }
+
         default:
           return state;
     }

@@ -17,12 +17,13 @@ export const addDish = (dish) => {
     }
   } 
 
-  export const indexDishes = () => {
-    return dispatch => {
+  export const getDishes = () => {
+    return dispatch => {  
+      dispatch({ type: "LOADING_DISHES" })
       return fetch(baseUrl + '/dishes')
         .then(resp => resp.json())
         .then(dishes => {
-          return dispatch({ type: 'INDEX_DISHES', dishes })
+          return dispatch({ type: 'GET_DISHES', dishes })
         })
     }
   }
