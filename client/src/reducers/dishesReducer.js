@@ -14,8 +14,12 @@ export default (state=initialState, action) => {
           ...state,
           dishes: [...state.dishes, action.dish]
         }
-  
-      default:
-        return state;
+        case "INDEX_DISHES":
+          return {
+            ...state,
+            dishes: action.dishes,
+        }
+        default:
+          return state;
     }
 }

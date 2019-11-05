@@ -5,8 +5,8 @@ import "/Users/dawn/gobbler-project/client/src/Css/footer.css";
 
 const Footer = () => {
     return (
-      <footer class="footer">
-          <div class="footer">
+      <footer className="footer">
+          <div className="footer">
             <h3>footer</h3>
           </div>
        </footer>

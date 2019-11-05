@@ -4,8 +4,8 @@ import '/Users/dawn/gobbler-project/client/src/Css/nav.css';
 
 const Nav = () => {
     return (
-      <nav class="nav">
-        <div class="nav">
+      <nav className="nav">
+        <div className="nav">
          <h3><Link to="/">Home</Link></h3>
          <h3><Link to="/dishesNew">Create Dish</Link></h3>
          <h3><Link to="/sponsors">Sponsors</Link></h3>

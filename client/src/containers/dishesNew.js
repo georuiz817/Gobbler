@@ -27,7 +27,12 @@ export class dishesNew extends Component {
     handleSubmit = e => {
         e.preventDefault();
         this.props.addDish(this.state)
-        
+        this.setState({
+          main: '',
+          side_one: '',
+          side_two: '',
+          drink: ''
+        })
       }
 
 

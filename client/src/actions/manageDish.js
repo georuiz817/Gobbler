@@ -16,3 +16,14 @@ export const addDish = (dish) => {
        })
     }
   } 
+
+  export const indexDishes = () => {
+    return dispatch => {
+      return fetch(baseUrl + '/dishes')
+        .then(resp => resp.json())
+        .then(dishes => {
+          return dispatch({ type: 'INDEX_DISHES', dishes })
+        })
+    }
+  }
+  
