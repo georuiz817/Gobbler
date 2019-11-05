@@ -1,0 +1,21 @@
+.nav h3 {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+  
+  /* Change the color of links on mouse-over */
+  .nav h3:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .nav h3.active {
+    background-color: dodgerblue;
+    color: white;
+  }
