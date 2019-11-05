@@ -33,6 +33,7 @@ export class dishesNew extends Component {
           side_two: '',
           drink: ''
         })
+        alert('Dish submitted! Check it out in our view dishes menu.');
       }
 
 
