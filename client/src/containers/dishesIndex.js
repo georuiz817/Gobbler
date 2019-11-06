@@ -10,7 +10,7 @@ class dishesIndex extends Component {
   }
  
   render() {
-    const dishes = this.props.dishes.map(dish => <li key={dish.id}>{dish.main}</li>);
+    const dishes = this.props.dishes.map(dish => <li key={dish.id}>{dish.main} - {dish.side_one} - {dish.side_two} - {dish.drink}</li>);
  
     return(
       <div>

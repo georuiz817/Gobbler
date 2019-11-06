@@ -4,7 +4,7 @@ const Errors = () => {
     return (
         <div>
         This page doesn't exist D:
-      </div>
+       </div>
     )
   }
 
