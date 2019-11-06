@@ -25,7 +25,13 @@ export function getDishes() {
       .then(dishes => dispatch({ type: 'GET_DISHES', dishes}));
   };
 }
-  
-
-
+////////////////////////////////////////////////////////////////////////////
+export const getDish = id => {
+  return dispatch => {
+    dispatch({ type: "LOADING_DISHES" });
+    return fetch(baseUrl + '/dishes/' + id)
+      .then(resp => resp.json())
+      .then( dish => dispatch({ type: "GET_DISH", dish }))
+  }
+}
  
