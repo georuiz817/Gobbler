@@ -1,9 +1,6 @@
 const initialState = {
     dishes: [],
-    main: "",
-    side_one: "",
-    side_two: "",
-    drink: "",
+   
   }
 
 
