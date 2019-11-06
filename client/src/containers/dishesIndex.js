@@ -31,6 +31,6 @@ const mapStateToProps = state => {
       dishes: state.dishesReducer.dishes,
     }
   }
-
+//
 
 export default connect(mapStateToProps, { getDishes })(dishesIndex);
