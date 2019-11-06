@@ -16,10 +16,9 @@ export const addDish = (dish) => {
        })
     }
   } 
-
+////////////////////////////////////////////////////////////////////////////
   export const getDishes = () => {
     return dispatch => {  
-      dispatch({ type: "LOADING_DISHES" })
       return fetch(baseUrl + '/dishes')
         .then(resp => resp.json())
         .then(dishes => {

@@ -1,12 +1,17 @@
 .borderh1 {
-    margin:auto;width:20%;
+    margin:auto;
+    width:20%;
+    margin-top:-50px;
 }
 
-h1 {
+#gobblerHeader {
     text-align: center;
-    font-size: 100px;
+    font-size: 100px;  
 }
 
-li {
-    text-align: center
+.gobblerList {
+    text-align: center;
+    list-style-position: inside;
+    font-size:20px;
 }
+
