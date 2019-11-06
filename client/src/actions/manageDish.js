@@ -17,13 +17,15 @@ export const addDish = (dish) => {
     }
   } 
 ////////////////////////////////////////////////////////////////////////////
-  export const getDishes = () => {
-    return dispatch => {  
-      return fetch(baseUrl + '/dishes')
-        .then(resp => resp.json())
-        .then(dishes => {
-          return dispatch({ type: 'GET_DISHES', dishes })
-        })
-    }
-  }
+export function getDishes() {
+  return (dispatch) => {
+    dispatch({ type: 'START_GETTING_DISHES_REQUEST' });
+     fetch(baseUrl + '/dishes')
+      .then(response => response.json())
+      .then(dishes => dispatch({ type: 'GET_DISHES', dishes}));
+  };
+}
   
+
+
+ 

@@ -1,8 +1,7 @@
 const initialState = {
     dishes: [],
-   
+    loading: false,
   }
-
 
 export default (state=initialState, action) => {
     switch(action.type) {    
@@ -16,8 +15,22 @@ export default (state=initialState, action) => {
           return {
             ...state,
             dishes: action.dishes,
-        }
+            loading: false,
+          }
       ////////////////////////////////////////////////////////////////////////////
+      case "LOADING_DISHES":
+        return {
+          ...state,
+          loading: true
+        }
+        ////////////////////////////////////////////////////////////////////////////
+        case 'START_GETTING_DISHES_REQUEST':
+          return {
+            ...state,
+            dishes: [...state.dishes],
+            loading: true
+          }
+        ////////////////////////////////////////////////////////////////////////////
         default:
           return state;
     }
