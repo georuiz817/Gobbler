@@ -7,7 +7,7 @@ import Footer from "/Users/dawn/gobbler-project/client/src/components/footer.js"
 import Sponsors from "/Users/dawn/gobbler-project/client/src/components/sponsors.js";
 import dishesNew from "/Users/dawn/gobbler-project/client/src/containers/dishesNew.js";
 import dishesIndex from "/Users/dawn/gobbler-project/client/src/containers/dishesIndex.js";
-
+import dishShow from '/Users/dawn/gobbler-project/client/src/containers/dishShow.js';
 
 class App extends Component {
 
@@ -21,6 +21,7 @@ class App extends Component {
           <Route exact path="/sponsors" component={Sponsors}/>
           <Route exact path="/dishesNew" component={dishesNew}/>
           <Route exact path="/dishesIndex" component={dishesIndex} />
+          <Route exact path="/dishShow/:id" component={dishShow}/>
           <Route component={Errors} />
         </Switch>
       </div>
