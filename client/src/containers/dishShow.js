@@ -14,10 +14,7 @@ export class dishShow extends Component {
         if(this.props.currentDish ) {
           return (
             <div>
-              <p>{this.props.currentDish.main }</p>
-              <p>{this.props.currentDish.side_one }</p>
-              <p>{this.props.currentDish.side_two }</p>
-              <p>{this.props.currentDish.drink }</p>
+               <h3>{this.props.currentDish.main } with a side of {this.props.currentDish.side_one } and {this.props.currentDish.side_two }. Lastly a glass of {this.props.currentDish.drink }!<button>delete</button></h3> 
             </div>
           )
         } else {
@@ -35,4 +32,6 @@ export class dishShow extends Component {
       }
 
 
-      export default connect(mapStateToProps, { getDish })(dishShow);
+export default connect(mapStateToProps, { getDish })(dishShow);
+
+
