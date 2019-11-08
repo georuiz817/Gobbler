@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { getDish } from '/Users/dawn/gobbler-project/client/src/actions/manageDish.js';
+import snoopy from '/Users/dawn/gobbler-project/client/src/photos/snoopy.gif';
+
+
 
 export class dishShow extends Component {
 
@@ -15,6 +18,7 @@ export class dishShow extends Component {
           return (
             <div>
                <h3>{this.props.currentDish.main } with a side of {this.props.currentDish.side_one } and {this.props.currentDish.side_two }. Lastly a glass of {this.props.currentDish.drink }!<button>delete</button></h3> 
+               <img src={snoopy} alt="n/a"/>
             </div>
           )
         } else {
