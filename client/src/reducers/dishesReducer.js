@@ -39,6 +39,12 @@ export default (state=initialState, action) => {
               currentDish: action.dish
             }
         ////////////////////////////////////////////////////////////////////////////
+        case "DELETE_DISH":
+          return{
+            dishes: state.dishes.filter(dish => dish.id !== action.payload)
+          }
+        
+       ////////////////////////////////////////////////////////////////////////////
         default:
           return state;
     }

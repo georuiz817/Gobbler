@@ -1,5 +1,5 @@
 const baseUrl = 'http://localhost:3001'
-
+////////////////////////////////////////////////////////////////////////////
 export const addDish = (dish) => {
     return dispatch => {
       return fetch(baseUrl + '/dishes', {
@@ -34,3 +34,19 @@ export const getDish = id => {
       .then( dish => dispatch({ type: "GET_DISH", dish }))
   }
 }
+////////////////////////////////////////////////////////////////////////////
+export const deleteDish = (id) => {
+  return dispatch => {
+    return fetch(baseUrl + '/dishes' + id, {
+      method: "DELETE",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      })
+    .then(resp => resp.json())
+    .then(id => {
+      dispatch({ type: "DELETE_DISH", id })
+     })
+  }
+} 
