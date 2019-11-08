@@ -13,7 +13,8 @@ class dishesIndex extends Component {
     const dishes = this.props.dishes.map(dish => <li key={dish.id}>{dish.main} with a side of {dish.side_one} and {dish.side_two}. Lastly a glass of {dish.drink}!</li>);
  
     return(
-      <div>
+      <div className="dishesIndex">
+        <h2 id="dishes-index-h2">See the delicious dishes everyone has created</h2>
         {dishes}
       </div>
     );

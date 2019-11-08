@@ -1,9 +1,10 @@
 import React from 'react'
+import reverse from "/Users/dawn/gobbler-project/client/src/photos/Reverse-gif.gif"
 
 const Errors = () => {
     return (
         <div>
-        This page doesn't exist D:
+        <img src={reverse} alt="n/a"/>
        </div>
     )
   }

@@ -20,7 +20,7 @@ class DishesController < ApplicationController
     if @dish.save
       render json: @dish, status: :created, location: @dish
     else
-      render json: @dish.errors, status: :unprocessable_entity
+      render json: @dish.errors, status: :unprocessable_entity 
     end
   end
 

@@ -1,6 +1,5 @@
    .footerImages img {
      display: inline-table;
-     color: black;
      padding: 14px;
      border-radius: 5px;
      left: 0;
@@ -16,6 +15,5 @@
 
 .footerImages img:hover {
   background-color: orange;
-  color: black;
 }
  
