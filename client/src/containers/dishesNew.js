@@ -40,7 +40,7 @@ export class dishesNew extends Component {
       render(){
           return(
             <div className="dishesNewPage">
-              <h2 id="mainh2" className="dish-creator-heading">...Create your dish...</h2>
+              <h2 id="mainh2" className="dish-creator-heading">~ Create your dish ~</h2>
               
               <form id="dish-form" onSubmit={ this.handleSubmit }>
                   <label htmlFor="main">Main:</label>
