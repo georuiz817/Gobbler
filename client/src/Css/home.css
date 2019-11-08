@@ -5,8 +5,12 @@
 }
 
 #gobblerHeader {
-    text-align: center;
-    font-size: 100px;  
+    display: block;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 50%; 
 }
 
 .gobblerList {
@@ -16,5 +20,5 @@
 }
 
 body {
-    background-color: orange;
+    background-color: whitesmoke;
 }
