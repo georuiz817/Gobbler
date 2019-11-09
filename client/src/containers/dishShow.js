@@ -17,7 +17,7 @@ export class dishShow extends Component {
         if(this.props.currentDish ) {
           return (
             <div>
-               <h3>{this.props.currentDish.main } with a side of {this.props.currentDish.side_one } and {this.props.currentDish.side_two }. Lastly a glass of {this.props.currentDish.drink }!<button>delete</button></h3> 
+               <h3>{this.props.currentDish.main } with a side of {this.props.currentDish.side_one } and {this.props.currentDish.side_two }. Lastly a glass of {this.props.currentDish.drink }!</h3> 
                <img src={snoopy} alt="n/a"/>
             </div>
           )

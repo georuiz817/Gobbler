@@ -35,18 +35,3 @@ export const getDish = id => {
   }
 }
 ////////////////////////////////////////////////////////////////////////////
-export const deleteDish = (id) => {
-  return dispatch => {
-    return fetch(baseUrl + '/dishes' + id, {
-      method: "DELETE",
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      })
-    .then(resp => resp.json())
-    .then(id => {
-      dispatch({ type: "DELETE_DISH", id })
-     })
-  }
-} 
