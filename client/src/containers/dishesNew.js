@@ -16,10 +16,10 @@ export class dishesNew extends Component {
       }
 
     
-  handleChange = e => {
-    const { name, value } = e.target;
+  handleChange = event => {
+    
     this.setState({
-        [name]: value
+      [event.target.name]: event.target.value
        })
       }
 

@@ -35,3 +35,25 @@ export const getDish = id => {
   }
 }
 ////////////////////////////////////////////////////////////////////////////
+
+
+/*
+Mock delete function, not working properly
+
+export const deleteDish = id => {
+  return dispatch => {
+    return fetch (baseUrl + '/dishes/' + id, {
+      method: 'DELETE',
+      headers: {
+         'Content-Type': 'application/json',
+         'Accept': 'application/json'
+      },
+   })
+   .then(resp => resp.json())
+   .then(() => {
+      dispatch({type: "DELETE_DISH", id})
+     
+   })
+ }
+}   
+*/
