@@ -31,7 +31,8 @@ export class dishShow extends Component {
     const mapStateToProps = state => {
         return {
            
-            currentDish: state.currentDish
+            currentDish: state.currentDish,
+            
         }
       }
 

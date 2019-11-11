@@ -40,14 +40,3 @@ export default (state=initialState, action) => {
 
 
 
-
-/* disovered / fixed repetitive code similar to start getting dishes request, had this one for index
-and start getting dishes request for show, realized can use either for both actions
-    ////////////////////////////////////////////////////////////////////////////
-    case "LOADING_DISHES":
-      return {
-        ...state,
-        loading: true
-      }
-
-*/

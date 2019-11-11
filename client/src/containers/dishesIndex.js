@@ -10,6 +10,8 @@ class dishesIndex extends Component {
   }
  
   render() {
+    if( !this.props.loading ) {
+
     const dishes = this.props.dishes.map(dish =><Link to={`/dishShow/${dish.id}`}> <li key={dish.id}>{dish.main} with a side of {dish.side_one} and {dish.side_two}. Lastly a glass of {dish.drink}!</li> </Link> );
  
     return(
@@ -18,7 +20,11 @@ class dishesIndex extends Component {
         {dishes}
       </div>
     );
-  }
+    }
+    else {
+      return ((<div>loading</div>))
+    }
+  };
 };
   
 function mapDispatchToProps(dispatch){
@@ -26,7 +32,7 @@ function mapDispatchToProps(dispatch){
 }
  
 function mapStateToProps(state){
-  return {dishes: state.dishes}
+  return {dishes: state.dishes, loading: state.loading,}
 }
  
 export default connect(mapStateToProps, mapDispatchToProps)(dishesIndex)
