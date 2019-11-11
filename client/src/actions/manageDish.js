@@ -28,7 +28,7 @@ export function getDishes() {
 ////////////////////////////////////////////////////////////////////////////
 export const getDish = id => {
   return dispatch => {
-    dispatch({ type: "LOADING_DISHES" });
+    dispatch({ type: "START_GETTING_DISHES_REQUEST" });
     return fetch(baseUrl + '/dishes/' + id)
       .then(resp => resp.json())
       .then( dish => dispatch({ type: "GET_DISH", dish }))

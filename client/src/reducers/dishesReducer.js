@@ -18,17 +18,10 @@ export default (state=initialState, action) => {
             dishes: action.dishes,
             loading: false,
           }
-      ////////////////////////////////////////////////////////////////////////////
-      case "LOADING_DISHES":
-        return {
-          ...state,
-          loading: true
-        }
-        ////////////////////////////////////////////////////////////////////////////
+       ////////////////////////////////////////////////////////////////////////////
         case 'START_GETTING_DISHES_REQUEST':
           return {
             ...state,
-            dishes: [...state.dishes],
             loading: true
           }
         ////////////////////////////////////////////////////////////////////////////
@@ -43,3 +36,18 @@ export default (state=initialState, action) => {
             return state;
     }
 }
+
+
+
+
+
+/* disovered / fixed repetitive code similar to start getting dishes request, had this one for index
+and start getting dishes request for show, realized can use either for both actions
+    ////////////////////////////////////////////////////////////////////////////
+    case "LOADING_DISHES":
+      return {
+        ...state,
+        loading: true
+      }
+
+*/
