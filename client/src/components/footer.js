@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
+    <div className="pageContainer">
       <footer className="footer">
           <div className="footerImages">
            <Link to="#"> <img id="fbLogo" src={fbPic} height="30px" alt="n/a"/> </Link> 
@@ -18,6 +19,7 @@ const Footer = () => {
            <Link to="#"> <img id="linkLogo" src={linkedinPic} height="30px"  alt="n/a"/> </Link>
           </div>
        </footer>
+    </div>
     )
   }
 
