@@ -1,6 +1,6 @@
 const baseUrl = 'http://localhost:3001'
 ////////////////////////////////////////////////////////////////////////////
-export const addDish = (dish) => {
+export const addDish = (dish,history) => {
     return dispatch => {
       return fetch(baseUrl + '/dishes', {
         method: "POST",
@@ -13,6 +13,7 @@ export const addDish = (dish) => {
       .then(resp => resp.json())
       .then(dish => {
         dispatch({ type: "ADD_DISH", dish })
+        history.push('/dishesIndex')
        })
     }
   } 

@@ -26,18 +26,19 @@ export class dishesNew extends Component {
 
     handleSubmit = e => {
         e.preventDefault();
-        this.props.addDish(this.state)
+        this.props.addDish(this.state, this.props.history)
         this.setState({
           main: '',
           side_one: '',
           side_two: '',
           drink: ''
         })
-        alert('Dish submitted! Check it out in our view dishes menu.');
+        this.props.history.push('/dishesIndex')
       }
 
 
       render(){
+        console.log(this.props)
           return(
             <div className="dishesNewPage">
               <h2 id="mainh2" className="dish-creator-heading">~ Create your dish ~</h2>
