@@ -1,30 +1,18 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { getDishes } from '/Users/dawn/gobbler-project/client/src/actions/manageDish.js'
-import LikeContainer from './LikeContainer.js'
- // imported like Container ^ 
-
-
-
+import { Link } from 'react-router-dom';
+ 
 class dishesIndex extends Component {
-// since we created a seperate container so we removed the state from here (LikeContainer)
-
-componentDidMount() {
-    this.props.something()
+ 
+  componentDidMount() {
+    this.props.getDishes()
   }
-
  
   render() {
     if( !this.props.loading ) {
 
-    const dishes = this.props.dishes.map(dish =>
-          <div key={dish.id}>
-            <LikeContainer dish={dish}/> 
-              {/*passed in LikeContainer component with props of dish  */}
-            <li>{dish.main} with a side of {dish.side_one} and {dish.side_two}. Lastly a glass of {dish.drink}!</li> 
-              
-          </div>
-          );
+    const dishes = this.props.dishes.map(dish =><Link to={`/dishShow/${dish.id}`}> <li key={dish.id}>{dish.main} with a side of {dish.side_one} and {dish.side_two}. Lastly a glass of {dish.drink}!</li> </Link> );
  
     return(
       <div className="dishesIndex">
@@ -40,7 +28,7 @@ componentDidMount() {
 };
   
 function mapDispatchToProps(dispatch){
-  return { something: () => dispatch(getDishes()) }
+  return { getDishes: () => dispatch(getDishes()) }
 }
  
 function mapStateToProps(state){
@@ -48,21 +36,3 @@ function mapStateToProps(state){
 }
  
 export default connect(mapStateToProps, mapDispatchToProps)(dishesIndex)
-
-
-
-
-
-/*
-<div key={dish.id}> <button onClick={this.handleLike}>Like</button> {this.state.like} <li>{dish.main} with a side of {dish.side_one} and {dish.side_two}. Lastly a glass of {dish.drink}!</li> </div>
- */
-
-
-
-/* handleLike = e => {
-    this.setState({
-      like: this.state.like + 1
-    })
-    console.log("hello")
-  }
-*/
