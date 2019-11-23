@@ -20,7 +20,8 @@
 }
 
 body {
-   text-align: center
+   text-align: center;
+   background-image: url('${/Users/dawn/gobbler-project/client/public/abstract-antique-backdrop-background-129731.jpg'});
 }
 
 #dishes-index-h1{

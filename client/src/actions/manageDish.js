@@ -36,25 +36,21 @@ export const getDish = id => {
   }
 }
 ////////////////////////////////////////////////////////////////////////////
-
-
-/*
-Mock delete function, not working properly
-
-export const deleteDish = id => {
-  return dispatch => {
-    return fetch (baseUrl + '/dishes/' + id, {
-      method: 'DELETE',
-      headers: {
-         'Content-Type': 'application/json',
-         'Accept': 'application/json'
-      },
-   })
-   .then(resp => resp.json())
-   .then(() => {
-      dispatch({type: "DELETE_DISH", id})
-     
-   })
- }
-}   
-*/
+  export const updateLikes = (dish, id) => {
+  return (dispatch) => {
+      return fetch((baseUrl + '/dishes/' + id), {
+          method: 'PATCH',
+          headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+              'likes': dish.likes
+          })
+      })
+          .then(resp => resp.json())
+          .then(dish => {
+              dispatch({type: 'INCREASE_LIKES', dish})
+            })
+        }
+      }
