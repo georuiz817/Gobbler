@@ -7,13 +7,12 @@ import { updateLikes } from '/Users/dawn/gobbler-project/client/src/actions/mana
 class LikeContainer extends Component {
 
   handleLike = () => {
-  const id = this.props.match.params.id
   let newCount = this.props.dish.likes + 1
   let updatedDish = {
     ...this.props.dish,
     likes: newCount
 }
-this.props.updateLikes(updatedDish, id)
+this.props.updateLikes(updatedDish, 'INCREASE_LIKES')
 }
 
       render(){

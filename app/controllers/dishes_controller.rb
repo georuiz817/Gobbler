@@ -46,6 +46,6 @@ class DishesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def dish_params
-      params.require(:dish).permit(:main, :side_one, :side_two, :drink)
+      params.require(:dish).permit(:main, :side_one, :side_two, :drink, :likes)
     end
 end

@@ -36,9 +36,9 @@ export const getDish = id => {
   }
 }
 ////////////////////////////////////////////////////////////////////////////
-  export const updateLikes = (dish, id) => {
+  export const updateLikes = (dish, actionType) => {
   return (dispatch) => {
-      return fetch((baseUrl + '/dishes/' + id), {
+      return fetch((baseUrl + `/dishes/${dish.id}`), {
           method: 'PATCH',
           headers: {
               'Accept': 'application/json',
@@ -50,7 +50,7 @@ export const getDish = id => {
       })
           .then(resp => resp.json())
           .then(dish => {
-              dispatch({type: 'INCREASE_LIKES', dish})
+              dispatch({type: actionType, dish})
             })
         }
       }
