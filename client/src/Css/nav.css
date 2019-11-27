@@ -1,13 +1,14 @@
-.nav h3 {
+.nav p {
     display: inline-block;
     text-align: center;
     padding: 14px;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 17px;
     border-radius: 5px;
+    color:black;
   }
   
-  .nav h3:hover {
+  .nav p:hover {
     background-color: orange;
   }
 

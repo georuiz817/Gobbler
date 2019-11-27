@@ -6,10 +6,10 @@ const Nav = () => {
     return (
       <nav className="nav">
         <div className="nav">
-         <h3><Link to="/">Home</Link></h3>
-         <h3><Link to="/dishesNew">Create Dish</Link></h3>
-         <h3><Link to="/dishesIndex">View all Dishes</Link></h3>
-         <h3><Link to="/sponsors">Sponsors</Link></h3>
+         <Link to="/"><p>Home</p></Link>
+         <Link to="/dishesNew"><p>Create Dish</p></Link>
+         <Link to="/dishesIndex"><p>View all Dishes</p></Link>
+         <Link to="/sponsors"><p>Sponsors</p></Link>
         </div>
       </nav>
     )

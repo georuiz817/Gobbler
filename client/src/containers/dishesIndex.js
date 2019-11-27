@@ -16,9 +16,7 @@ class dishesIndex extends Component {
     const dishes = this.props.dishes.map(dish =>
       <div key={dish.id}>
          <LikeContainer dish={dish}/> 
-         <Link to={`/dishShow/${dish.id}`}> 
-        <li>{dish.main} with a side of {dish.side_one} and {dish.side_two}. Lastly a glass of {dish.drink}!</li> 
-        </Link> 
+         <li>{dish.main} with a side of {dish.side_one} and {dish.side_two}. Lastly a glass of {dish.drink}! <Link to={`/dishShow/${dish.id}`}><button>View</button></Link></li> 
       </div>)
 
     return(

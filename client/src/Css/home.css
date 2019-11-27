@@ -21,10 +21,10 @@
 
 body {
    text-align: center;
+   background-color: whitesmoke;
+   font-family: "Segoe UI";
 }
 
-#dishes-index-h1{
-margin-top: 120px;
 
-}
+
 
