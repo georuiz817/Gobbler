@@ -17,9 +17,9 @@ this.props.updateLikes(updatedDish, 'INCREASE_LIKES')
 
       render(){
           return(
-              <div>
-                {this.props.dish.likes}
-                < LikeButton handleLike={this.handleLike} />
+              <div className="like-container-inline" >
+                <p>< LikeButton handleLike={this.handleLike} /></p>
+                <p>{this.props.dish.likes}</p>
               </div>
           )
       }

@@ -26,5 +26,15 @@ body {
 }
 
 
+#list-item{
+    text-align: left;
+}
 
+.like-container-inline p{
+    display: inline-block;
+    margin-right: 1%;
+}
 
+#container{
+    text-align: left;
+}
