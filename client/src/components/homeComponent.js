@@ -10,6 +10,7 @@ const homeComponent = () => {
         <ol className="gobblerList">
             <li>Create your ideal Thanksgiving dish using our Gobbler form.</li>
             <li>Smile! Your Gobbler dish will be replicated by one of our volunteers and served to a person in need this Thanksgiving day.</li>
+            <li>Explore. See all the dishes made and view any shared recipes.</li>
         </ol>
     </div>
          )
