@@ -41,7 +41,7 @@ export class dishesNew extends Component {
         console.log(this.props)
           return(
             <div className="dishesNewPage">
-              <h2 id="mainh2" className="dish-creator-heading">~ Create your dish ~</h2>
+              <h2 id="mainh2" className="dish-creator-heading">Create your dish</h2>
               
               <form id="dish-form" onSubmit={ this.handleSubmit }>
                   
@@ -60,12 +60,15 @@ export class dishesNew extends Component {
                   <label htmlFor="drink">Drink:</label>
                   <input type="text" name="drink" id="drink" value={this.state.drink} onChange={this.handleChange} />
 
-                  <label htmlFor="recipe">Feel free to copy a detailed recipe here (optional):</label>
-                  <input type="text" name="recipe" id="recipe" value={this.state.recipe} onChange={this.handleChange}/>
+                  <label htmlFor="recipe">Recipe here (optional):</label>
+                  <textarea type="text" name="recipe" id="recipe" value={this.state.recipe} onChange={this.handleChange}/>
                   
+                  <br></br>
                   <input type="submit" value="Create dish!" className="btn" />
              
               </form>
+              <br></br>
+              <br></br>
               <h2 className="dish-creator-heading">Our sponsors will do the rest!</h2>
             </div>
             )
