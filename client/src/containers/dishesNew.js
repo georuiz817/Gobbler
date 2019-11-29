@@ -44,6 +44,10 @@ export class dishesNew extends Component {
               <h2 id="mainh2" className="dish-creator-heading">~ Create your dish ~</h2>
               
               <form id="dish-form" onSubmit={ this.handleSubmit }>
+                  
+                  <label htmlfor="name">Name:</label>
+                  <input type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} />
+
                   <label htmlFor="main">Main:</label>
                   <input type="text" name="main" id="main" value={this.state.main} onChange={this.handleChange} />
                 
@@ -56,7 +60,11 @@ export class dishesNew extends Component {
                   <label htmlFor="drink">Drink:</label>
                   <input type="text" name="drink" id="drink" value={this.state.drink} onChange={this.handleChange} />
 
+                  <label htmlFor="recipe">Feel free to copy a detailed recipe here (optional):</label>
+                  <input type="text" name="recipe" id="recipe" value={this.state.recipe} onChange={this.handleChange}/>
+                  
                   <input type="submit" value="Create dish!" className="btn" />
+             
               </form>
               <h2 className="dish-creator-heading">Our sponsors will do the rest!</h2>
             </div>
