@@ -64,12 +64,10 @@ export class dishesNew extends Component {
                   <textarea type="text" name="recipe" id="recipe" value={this.state.recipe} onChange={this.handleChange}/>
                   
                   <br></br>
+                  <br></br>
                   <input type="submit" value="Create dish!" className="btn" />
              
               </form>
-              <br></br>
-              <br></br>
-              <h2 className="dish-creator-heading">Our sponsors will do the rest!</h2>
             </div>
             )
         }
