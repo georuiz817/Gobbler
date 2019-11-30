@@ -23,10 +23,13 @@ body {
    text-align: center;
    background-color: whitesmoke;
    font-family: "Segoe UI";
+   background-image: url('https://previews.123rf.com/images/kalinavova/kalinavova1303/kalinavova130300075/18466618-white-grey-wood-texture-background-old-panels.jpg');
 }
 
 
-
+#list-item{
+    font-size: 25px;
+}
 
 .like-container-inline p{
     display: inline-block;
