@@ -1,5 +1,4 @@
 import React from 'react'; 
-import '/Users/dawn/gobbler-project/client/src/Css/home.css'
 import homeLogo from "/Users/dawn/gobbler-project/client/src/photos/large-logo.png";
 
 const homeComponent = () => {

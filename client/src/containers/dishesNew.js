@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { addDish } from '/Users/dawn/gobbler-project/client/src/actions/manageDish.js';
-import '/Users/dawn/gobbler-project/client/src/Css/dishForm.css';
+
 
 export class dishesNew extends Component {
     constructor(props) {

@@ -1,5 +1,4 @@
 import React from 'react';
-import '/Users/dawn/gobbler-project/client/src/Css/sponsors.css';
 import butter from '/Users/dawn/gobbler-project/client/src/photos/butter-ball.png';
 import ups from '/Users/dawn/gobbler-project/client/src/photos/upsLogo.jpeg';
 import army from '/Users/dawn/gobbler-project/client/src/photos/armyL.png';
@@ -10,6 +9,9 @@ import nintendo from '/Users/dawn/gobbler-project/client/src/photos/nintendoL.pn
 const Sponsors = () => {
     return (
   <div>
+    <h1>Every time a Gobbler dish is created, it's donated to a person in need.</h1>
+    <h1>Please take the time to give credit to the amazing companies who help fund Gobbler today.</h1>
+    <h1>Without them this mission would not be possible.</h1>
     <div class="row">
       <div class="column">
         <img src={butter} alt="n/a"/>

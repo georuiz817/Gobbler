@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import '/Users/dawn/gobbler-project/client/src/Css/nav.css';
+
 
 const Nav = () => {
     return (
