@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { addDish } from '/Users/dawn/gobbler-project/client/src/actions/manageDish.js';
 
 
+// define our local state w/ our constructor, these are the attributes for a dish
 export class dishesNew extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +16,8 @@ export class dishesNew extends Component {
         }
       }
 
-    
+
+  //whenever a value is put into a input on our form we will update the state
   handleChange = e => {
     const { name, value } = e.target;
     this.setState({
@@ -23,7 +25,11 @@ export class dishesNew extends Component {
        })
       }
 
-
+  //on submit in our form, once we hit submit we are running handlesubmit
+  //it will prevent the default and not send us anywhere astray 
+  //we will run our add dish action which will take in our current state and history
+  //then we will set our local state back to a cleared form 
+  // we will then get pushed to our dishes index page to view all dishes
     handleSubmit = e => {
         e.preventDefault();
         this.props.addDish(this.state, this.props.history)
@@ -73,4 +79,7 @@ export class dishesNew extends Component {
         }
     }
 
+    //we are not connected to the store here, not displaying any stored state
+    // however we need the action of adddish so were using the short cut for map
+    //dispatch to props 
     export default connect(null, { addDish })(dishesNew)

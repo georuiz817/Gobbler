@@ -6,10 +6,16 @@ import LikeContainer from '/Users/dawn/gobbler-project/client/src/containers/Lik
  
 class dishesIndex extends Component {
  
+  // Once all the HTML has mounted to the DOM, we will star the get dishes action 
+  // to grab our back-end dishes and update our state  
   componentDidMount() {
     this.props.getDishes()
   }
  
+  // if loading is false, aka our fetch request to grab our dishes is complete
+  //we will map the array of dishes in our state in a sentence w/ their attributes
+  // we will also display the like container and give it a prop of dish 
+  //else aka if loading is true, display the loading message
   render() {
     if( !this.props.loading ) {
 
@@ -31,11 +37,14 @@ class dishesIndex extends Component {
     }
   };
 };
-  
+
+// taking in our get dishes actions as a prop so we can use it in the container
 function mapDispatchToProps(dispatch){
   return { getDishes: () => dispatch(getDishes()) }
 }
  
+// taking in our stored state as a prop so we can use it in the container, 
+// via connect
 function mapStateToProps(state){
   return {dishes: state.dishes, loading: state.loading,}
 }

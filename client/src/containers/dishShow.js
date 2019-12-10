@@ -7,12 +7,15 @@ import snoopy from '/Users/dawn/gobbler-project/client/src/photos/snoopy.gif';
 
 export class dishShow extends Component {
 
-
+    //once the html is rendered to the dom we are grabbing the chosen dish by it's ID 
     componentDidMount() {
         const id = this.props.match.params.id;
         this.props.getDish(id)
       }
 
+      // if it's our currentdish we are goin to display it's attributes 
+      // e;se if were currently not at our chosen dish yet (fetch not complete)
+      // we will display the loading message 
       render() {
         if(this.props.currentDish ) {
           return (
@@ -29,7 +32,7 @@ export class dishShow extends Component {
       }
     }
 
-
+    //grabbing our current dish from our store 
     const mapStateToProps = state => {
         return {
            
@@ -39,6 +42,8 @@ export class dishShow extends Component {
       }
 
 
+      //mapped our current dish from our store to our current state, used shortcut
+      //to the mapdispatch to props of getdish
 export default connect(mapStateToProps, { getDish })(dishShow);
 
 
