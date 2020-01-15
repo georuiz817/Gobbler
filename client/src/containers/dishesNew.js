@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { addDish } from '/Users/dawn/gobbler-project/client/src/actions/manageDish.js';
+import { addDish } from '../actions/manageDish.js';
 
 
 // define our local state w/ our constructor, these are the attributes for a dish

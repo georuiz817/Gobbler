@@ -6,7 +6,7 @@ import thunk from 'redux-thunk'
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import dishesReducer from '/Users/dawn/gobbler-project/client/src/reducers/dishesReducer.js';
+import dishesReducer from './reducers/dishesReducer.js';
 
 const store = createStore(dishesReducer,applyMiddleware(thunk));
 

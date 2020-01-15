@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import homeComponent from '/Users/dawn/gobbler-project/client/src/components/homeComponent.js';
-import Nav from '/Users/dawn/gobbler-project/client/src/components/navComponent.js';
-import Errors from '/Users/dawn/gobbler-project/client/src/components/errors.js';
+import homeComponent from './components/homeComponent.js';
+import Nav from './components/navComponent.js';
+import Errors from './components/errors.js';
 //import Footer from "/Users/dawn/gobbler-project/client/src/components/footer.js";
-import Sponsors from "/Users/dawn/gobbler-project/client/src/components/sponsors.js";
-import dishesNew from "/Users/dawn/gobbler-project/client/src/containers/dishesNew.js";
-import dishesIndex from "/Users/dawn/gobbler-project/client/src/containers/dishesIndex.js";
-import dishShow from '/Users/dawn/gobbler-project/client/src/containers/dishShow.js';
+import Sponsors from "./components/sponsors.js";
+import dishesNew from "./containers/dishesNew.js";
+import dishesIndex from "./containers/dishesIndex.js";
+import dishShow from './containers/dishShow.js';
 
 class App extends Component {
 

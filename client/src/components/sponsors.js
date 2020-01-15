@@ -1,9 +1,9 @@
 import React from 'react';
-import butter from '/Users/dawn/gobbler-project/client/src/photos/butter-ball.png';
-import ups from '/Users/dawn/gobbler-project/client/src/photos/upsLogo.jpeg';
-import army from '/Users/dawn/gobbler-project/client/src/photos/armyL.png';
-import judes from '/Users/dawn/gobbler-project/client/src/photos/st-judes.jpeg';
-import nintendo from '/Users/dawn/gobbler-project/client/src/photos/nintendoL.png'
+import butter from '../photos/butter-ball.png';
+import ups from '../photos/upsLogo.jpeg';
+import army from '..//photos/armyL.png';
+import judes from '../photos/st-judes.jpeg';
+import nintendo from '../photos/nintendoL.png'
 
 
 const Sponsors = () => {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { getDishes } from '/Users/dawn/gobbler-project/client/src/actions/manageDish.js'
+import { getDishes } from '../actions/manageDish.js'
 import { Link } from 'react-router-dom';
-import LikeContainer from '/Users/dawn/gobbler-project/client/src/containers/LikeContainer.js'
+import LikeContainer from './LikeContainer.js'
  
 class dishesIndex extends Component {
  

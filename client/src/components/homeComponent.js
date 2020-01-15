@@ -1,5 +1,5 @@
 import React from 'react'; 
-import homeLogo from "/Users/dawn/gobbler-project/client/src/photos/large-logo.png";
+import homeLogo from "../photos/large-logo.png";
 
 const homeComponent = () => {
     return(

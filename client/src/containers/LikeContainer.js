@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import LikeButton from "/Users/dawn/gobbler-project/client/src/components/LikeButton.js"
+import LikeButton from "../components/LikeButton.js"
 import { connect } from 'react-redux'
-import { updateLikes } from '/Users/dawn/gobbler-project/client/src/actions/manageDish.js'
+import { updateLikes } from '../actions/manageDish.js'
 
 
 class LikeContainer extends Component {

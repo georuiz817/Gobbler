@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { getDish } from '/Users/dawn/gobbler-project/client/src/actions/manageDish.js';
-import snoopy from '/Users/dawn/gobbler-project/client/src/photos/snoopy.gif';
+import { getDish } from '../actions/manageDish.js';
+import snoopy from '../photos/snoopy.gif';
 
 
 
