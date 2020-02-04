@@ -47,7 +47,7 @@ export class dishesNew extends Component {
         console.log(this.props)
           return(
             <div className="dishesNewPage">
-              <h2 id="mainh2" className="dish-creator-heading">Create your dish</h2>
+              <h2 id="mainh" className="dish-creator-heading">Create your dish</h2>
               
               <form id="dish-form" onSubmit={ this.handleSubmit }>
                   

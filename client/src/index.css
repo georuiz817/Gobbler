@@ -1,103 +1,38 @@
-#dish-form label{
-  display:block;
-  text-align:center;
-  float:left;
-  width: 75px;
-  padding-right: 20px;
-}
-#dish-form input{
-  display: block;
-  margin:2px 0 20px 10px;
-  text-align: center;
-  width: 100px;
-  margin-bottom: 10px;
-}
-
-#dish-form{
-  margin-left: 40%;
-  margin-right:40%;
-  width: 70%;
-}
-
-#recipe {
-  text-align: center;
-  display: block;
-  height: 150px;
-}
-
-
-
-.borderh1 {
-  margin:auto;
-  width:20%;
-  margin-top:-50px;
-}
-
-#gobblerHeader {
-  display: block;
-  margin-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  width: 50%; 
-}
-
-.gobblerList {
-  text-align: center;
-  list-style-position: inside;
-  font-size:20px;
-}
-
 body {
- text-align: center;
- background-color: whitesmoke;
- font-family: "Segoe UI";
-}
+  text-align: center;
+  background-color:white;
+  font-family: "Segoe UI";
+  color: black;
+ }
 
-
-#list-item{
-  font-size: 25px;
-}
-
-.like-container-inline p{
-  display: inline-block;
-  margin-right: 1%;
-}
-
-#container{
-  text-align: left;
-}
-
-
-
+/* centered navigation */
 .nav p {
   display: inline-block;
   text-align: center;
   padding: 14px;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 17px;
   border-radius: 5px;
   color:black;
 }
 
+
 .nav p:hover {
   background-color: orange;
 }
 
-.pageContainer {
-position: relative;
-min-height: 30vh;
-max-height: 60vh;
+.mainBlock{
+  max-width: 500px;
 }
 
-.row img{
-  width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  margin-bottom: 25px;
+.mainBlock p{
+  font-size: 30px;
+  
 }
 
-.column img{
-  text-align: center;
-  padding:10px 20px;
+#gobblerHeader{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
