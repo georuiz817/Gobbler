@@ -47,31 +47,37 @@ export class dishesNew extends Component {
         console.log(this.props)
           return(
             <div className="dishesNewPage">
-              <h2 id="mainh" className="dish-creator-heading">Create your dish</h2>
               
-              <form id="dish-form" onSubmit={ this.handleSubmit }>
-                  
+                <form class='form-group row'  id="dish-form" onSubmit={ this.handleSubmit }>
+           
+                <div  class="col-xs-3">
                   <label htmlfor="name">Name:</label>
-                  <input type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} />
-
+                  <input  class="form-control" type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} />
+            
                   <label htmlFor="main">Main:</label>
-                  <input type="text" name="main" id="main" value={this.state.main} onChange={this.handleChange} />
+                  <input  class="form-control" type="text" name="main" id="main" value={this.state.main} onChange={this.handleChange} />
                 
                   <label htmlFor="side_one">Side one:</label>
-                  <input type="text" name="side_one" id="side_one" value={this.state.side_one} onChange={this.handleChange} />
+                  <input  class="form-control" type="text" name="side_one" id="side_one" value={this.state.side_one} onChange={this.handleChange} />
 
                   <label htmlFor="side_two">Side two:</label>
-                  <input type="text" name="side_two" id="side_two" value={this.state.side_two} onChange={this.handleChange} />
+                  <input  class="form-control" type="text" name="side_two" id="side_two" value={this.state.side_two} onChange={this.handleChange} />
 
                   <label htmlFor="drink">Drink:</label>
-                  <input type="text" name="drink" id="drink" value={this.state.drink} onChange={this.handleChange} />
+                  <input  class="form-control" type="text" name="drink" id="drink" value={this.state.drink} onChange={this.handleChange} />
+                
+                  <label htmlFor="recipe">Recipe (optional):</label>
+                  <textarea class="form-control" rows="5" type="text" name="recipe" id="recipe" value={this.state.recipe} onChange={this.handleChange}/>
 
-                  <label htmlFor="recipe">Recipe here (optional):</label>
-                  <textarea type="text" name="recipe" id="recipe" value={this.state.recipe} onChange={this.handleChange}/>
-                  
                   <br></br>
-                  <br></br>
-                  <input type="submit" value="Create dish!" className="btn" />
+                  <input class=".btn-primary" type="submit" value="Create dish!" />
+                </div>
+
+          
+                
+             
+
+              
              
               </form>
             </div>

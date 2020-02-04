@@ -8,7 +8,7 @@ import Sponsors from "./components/sponsors.js";
 import dishesNew from "./containers/dishesNew.js";
 import dishesIndex from "./containers/dishesIndex.js";
 import dishShow from './containers/dishShow.js';
-
+import LogoComp from './components/LogoComp.js'
 
 class App extends Component {
 
@@ -16,6 +16,7 @@ class App extends Component {
     return (     
     <Router>
       <Nav />
+      <LogoComp />
       <div className="container">
         <Switch>
           <Route exact path="/" component={homeComponent} />

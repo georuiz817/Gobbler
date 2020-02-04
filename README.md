@@ -1,5 +1,11 @@
-Hello and welcome to Gobbler! This was made for my final project with Flatiron University. Quick installation instructions are below. Project is using Postgres so be weary. Also check out the project requirement checklist to get a feel of exactly what points the project hits. 
+Hello and welcome to Gobbler! This was made for my final project with Flatiron University. Quick installation instructions are below. Also check out the project requirement checklist to get a feel of exactly what points the project hits. 
 
+Specs: <br/>
+Front end: React/Redux <br/>
+Back end API: Rails, Postgres<br/>
+CSS: Bootstrap <br/>
+
+Installation guide: <br/>
 bundle install  <br/>
 rails db:create   <br/>
 rails db:migrate  <br/>

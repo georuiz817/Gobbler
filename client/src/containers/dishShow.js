@@ -23,7 +23,7 @@ export class dishShow extends Component {
                <h3>{this.props.currentDish.name} served {this.props.currentDish.main } with a side of {this.props.currentDish.side_one } and {this.props.currentDish.side_two }. Lastly a glass of {this.props.currentDish.drink }!</h3>
                <h3>Recipe:</h3>
                <p>{this.props.currentDish.recipe}</p> 
-               <img src={snoopy} alt="n/a"/>
+               <img class="rounded" height="200px" src={snoopy} alt="n/a"/>
             </div>
           )
         } else {

@@ -1,13 +1,9 @@
 import React from 'react'; 
-import homeLogo from "../photos/large-logo.png";
+
 
 const homeComponent = () => {
     return(
 <div>
-    <img id="gobblerHeader" height='175px' src={homeLogo} alt="n/a" />
-    <hr className="borderh1">
-    </hr>
-    
     <div className="mainBlock">
         <img class="rounded float-right" alt="n/a" length="240px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGEkovNyjEPYwxi3L5w98z5wcPEVy_GdYDJZUQn-t3CAAAgCok" />
         <h1>Create</h1>
