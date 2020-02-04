@@ -1,4 +1,12 @@
-bundle install, rails db:create, rails db:migrate, cd into client then yarn install, cd .. foreman start :)
+Hello and welcome to Gobbler! This was made for my final project with Flatiron University. Quick installation instructions are below. Project is using Postgres so be weary. Also check out the project requirement checklist to get a feel of exactly what points the project hits. 
+
+bundle install
+rails db:create 
+rails db:migrate
+cd into client  
+yarn install 
+cd .. 
+foreman start :)
 
 
 Project Checklist: 
