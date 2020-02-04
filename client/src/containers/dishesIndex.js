@@ -22,12 +22,11 @@ class dishesIndex extends Component {
     const dishes = this.props.dishes.map(dish =>
       <div key={dish.id}>
        <LikeContainer dish={dish}/>
-        <li id="list-item">{dish.name} served {dish.main} with a side of {dish.side_one} and {dish.side_two}. Lastly a glass of {dish.drink}! <Link to={`/dishShow/${dish.id}`}><button>View/Recipe</button></Link></li> 
+        <li class="text-center" id="list-item">{dish.name} served {dish.main} with a side of {dish.side_one} and {dish.side_two}. Lastly a glass of {dish.drink}! <Link to={`/dishShow/${dish.id}`}><button>View/Recipe</button></Link></li> 
       </div>)
 
     return(
-      <div className="dishesIndex">
-        <h1 id="dishes-index-h1">See the delicious dishes everyone has created</h1>
+      <div  className="dishesIndex">
         {dishes}
       </div>
     );

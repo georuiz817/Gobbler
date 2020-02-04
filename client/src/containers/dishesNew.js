@@ -47,10 +47,12 @@ export class dishesNew extends Component {
         console.log(this.props)
           return(
             <div className="dishesNewPage">
+
+              <h1>Create</h1>
               
-                <form class='form-group row'  id="dish-form" onSubmit={ this.handleSubmit }>
+                <form   id="dish-form" onSubmit={ this.handleSubmit }>
            
-                <div  class="col-xs-3">
+                <div  class="col-xs-4">
                   <label htmlfor="name">Name:</label>
                   <input  class="form-control" type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} />
             
@@ -72,15 +74,12 @@ export class dishesNew extends Component {
                   <br></br>
                   <input class=".btn-primary" type="submit" value="Create dish!" />
                 </div>
-
-          
                 
-             
+                
+             </form>
 
-              
-             
-              </form>
-            </div>
+
+                        </div>
             )
         }
     }

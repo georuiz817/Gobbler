@@ -1,11 +1,11 @@
 import React from 'react'; 
-
+import Doggo from '../photos/doggo.jpg'
 
 const homeComponent = () => {
     return(
 <div>
     <div className="mainBlock">
-        <img class="rounded float-right" alt="n/a" length="240px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGEkovNyjEPYwxi3L5w98z5wcPEVy_GdYDJZUQn-t3CAAAgCok" />
+        <img class="rounded float-right" alt="n/a" height="300px" src={Doggo} />
         <h1>Create</h1>
         <p>Your own Thanksgiving dish. One that you'd want to share no matter who it was with. The dish should represent how you feel this holiday.</p>
         <br></br>
