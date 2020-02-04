@@ -1,12 +1,12 @@
 Hello and welcome to Gobbler! This was made for my final project with Flatiron University. Quick installation instructions are below. Project is using Postgres so be weary. Also check out the project requirement checklist to get a feel of exactly what points the project hits. 
 
-bundle install  
-rails db:create   
-rails db:migrate  
-cd into client    
-yarn install   
-cd ..   
-foreman start :)  
+bundle install  <br/>
+rails db:create   <br/>
+rails db:migrate  <br/>
+cd into client    <br/>
+yarn install   <br/>
+cd ..   <br/>
+foreman start :) <br/>  
 
 
 Project Checklist:   
