@@ -1,6 +1,6 @@
 bundle install, rails db:create, rails db:migrate, cd into client then yarn install, cd .. foreman start :)
 
-//////////////////////////////////////////////////////////////////
+
 Project Checklist: 
 • The code is written in ES6 as much as possible *
   True
