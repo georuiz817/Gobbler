@@ -8,7 +8,7 @@ import Sponsors from "./components/sponsors.js";
 import dishesNew from "./containers/dishesNew.js";
 import dishesIndex from "./containers/dishesIndex.js";
 import dishShow from './containers/dishShow.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 class App extends Component {
 

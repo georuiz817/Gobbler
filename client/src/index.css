@@ -21,18 +21,18 @@ body {
   background-color: orange;
 }
 
-.mainBlock{
+.mainBlock p{
   max-width: 500px;
+  font-size: 15px;
 }
 
-.mainBlock p{
-  font-size: 30px;
-  
-}
+
 
 #gobblerHeader{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
 }
+
+
+

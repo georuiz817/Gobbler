@@ -7,6 +7,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import dishesReducer from './reducers/dishesReducer.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const store = createStore(dishesReducer,applyMiddleware(thunk));
 

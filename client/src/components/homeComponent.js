@@ -3,32 +3,30 @@ import homeLogo from "../photos/large-logo.png";
 
 const homeComponent = () => {
     return(
-    <div>
-        <img id="gobblerHeader" src={homeLogo} alt="n/a"/>
-        <hr className="borderh1"></hr>
+<div>
+    <img id="gobblerHeader" height='175px' src={homeLogo} alt="n/a" />
+    <hr className="borderh1">
+    </hr>
+    
     <div className="mainBlock">
-        <div className="homeBlockOne">
+        <img class="rounded float-right" alt="n/a" length="240px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGEkovNyjEPYwxi3L5w98z5wcPEVy_GdYDJZUQn-t3CAAAgCok" />
+        <h1>Create</h1>
+        <p>Your own Thanksgiving dish. One that you'd want to share no matter who it was with. The dish should represent how you feel this holiday.</p>
+        <br></br>
         
-        <p>Create</p>
-        <span>Your own Thanksgiving dish. One that you'd want to share no matter who it was with. The dish should represent how you feel this holiday.</span>
-        </div>
+        <h1>Research</h1>
+        <p>Any recipe you'd like. Gobbler allows the donator to optionally put in a recipe for the dish they suggested. If they love it, chanches are they can make it tasty</p>
         <br></br>
-
-        <div className="homeBlockTwo">
-            <p>Research</p>
-            <span>Any recipe you'd like. Gobbler allows the donator to optionally put in a recipe for the dish they suggested. If they love it, chanches are they can make it tasty</span>
+        
+        <h1>Smile</h1>
+        <p>After the creation our your dish, something special happens. One of our listed sponsors will be donating your created dish to someone in need this Thanksgiving day. Enjoy your time knowing that you've given someone else the chanche too.</p>
         </div>
+</div>
+ 
 
-       
-        <br></br>
-
-        <div className="homeBlockThree">
-            <p>Smile</p>
-            <span>After the creation our your dish, something special happens. One of our listed sponsors will be donating your created dish to someone in need this Thanksgiving day. Enjoy your time knowing that you've given someone else the chanche too.</span>
-        </div>
-        </div>
-    </div>
-         )
+    )
 }
+
+
 
 export default homeComponent
