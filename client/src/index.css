@@ -2,7 +2,8 @@ body {
   text-align: center;
   font-family: "Segoe UI";
   color: black;
-  text-align: center;
+
+  
 }
 
 /* centered navigation */
@@ -46,4 +47,9 @@ body {
 .like-container-inline p{
   display: inline-block;
   margin-right: 1%;
+ }
+
+ #list-item{
+   margin-bottom: 25px;
 }
+
