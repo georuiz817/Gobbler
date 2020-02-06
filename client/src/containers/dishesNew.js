@@ -72,7 +72,7 @@ export class dishesNew extends Component {
                   <textarea class="form-control" rows="5" type="text" name="recipe" id="recipe" value={this.state.recipe} onChange={this.handleChange}/>
 
                   <br></br>
-                  <input class=".btn-primary" type="submit" value="Create dish!" />
+                  <input class="btn btn-warning" type="submit" value="Create dish!" />
                 </div>
                 
                 

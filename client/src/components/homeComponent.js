@@ -11,7 +11,7 @@ const homeComponent = () => {
         <br></br>
         
         <h1>Research</h1>
-        <p>Any recipe you'd like. Gobbler allows the donator to optionally put in a recipe for the dish they suggested. If they love it, chanches are they can make it tasty</p>
+        <p>Any recipe you'd like. Gobbler allows the donator to optionally put in a recipe for the dish they suggested. If they love it, chanches are they can make it tasty.</p>
         <br></br>
         
         <h1>Smile</h1>
