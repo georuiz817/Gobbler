@@ -58,3 +58,11 @@ body {
   border-bottom: solid black 1px; 
   margin-top: 20px;
 }
+
+.form-control{
+ margin-bottom: 1%;
+}
+
+ .col-xs-4 input{
+  border-width: 0 0 1px;
+}

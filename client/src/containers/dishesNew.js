@@ -47,39 +47,19 @@ export class dishesNew extends Component {
         console.log(this.props)
           return(
             <div className="dishesNewPage">
-
               <h1>Create</h1>
-              
-                <form   id="dish-form" onSubmit={ this.handleSubmit }>
-           
-                <div  class="col-xs-4">
-                  <label htmlfor="name">Name:</label>
-                  <input  class="form-control" type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} />
-            
-                  <label htmlFor="main">Main:</label>
-                  <input  class="form-control" type="text" name="main" id="main" value={this.state.main} onChange={this.handleChange} />
-                
-                  <label htmlFor="side_one">Side one:</label>
-                  <input  class="form-control" type="text" name="side_one" id="side_one" value={this.state.side_one} onChange={this.handleChange} />
-
-                  <label htmlFor="side_two">Side two:</label>
-                  <input  class="form-control" type="text" name="side_two" id="side_two" value={this.state.side_two} onChange={this.handleChange} />
-
-                  <label htmlFor="drink">Drink:</label>
-                  <input  class="form-control" type="text" name="drink" id="drink" value={this.state.drink} onChange={this.handleChange} />
-                
-                  <label htmlFor="recipe">Recipe (optional):</label>
-                  <textarea class="form-control" rows="5" type="text" name="recipe" id="recipe" value={this.state.recipe} onChange={this.handleChange}/>
-
-                  <br></br>
-                  <input class="btn btn-warning" type="submit" value="Create dish!" />
-                </div>
-                
-                
-             </form>
-
-
-                        </div>
+              <form id="dish-form" onSubmit={ this.handleSubmit }>
+                  <div  class="col-xs-4">
+                    <input placeholder='name'  class="form-control" type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} />
+                    <input placeholder='main'  class="form-control" type="text" name="main" id="main" value={this.state.main} onChange={this.handleChange} />
+                    <input placeholder='side one'  class="form-control" type="text" name="side_one" id="side_one" value={this.state.side_one} onChange={this.handleChange} />
+                    <input placeholder='side two'  class="form-control" type="text" name="side_two" id="side_two" value={this.state.side_two} onChange={this.handleChange} />
+                    <input placeholder='drink' class="form-control" type="text" name="drink" id="drink" value={this.state.drink} onChange={this.handleChange} />
+                    <textarea placeholder='recipe (optional)' class="form-control" rows="5" type="text" name="recipe" id="recipe" value={this.state.recipe} onChange={this.handleChange}/>
+                    <input class="btn btn-warning" type="submit" value="Create dish!" />
+                  </div>
+                </form>
+            </div>
             )
         }
     }
