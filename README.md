@@ -1,4 +1,4 @@
-![Website](./src/HomeImg.png)
+![Website](/client/src/HomeImg.png)
 
 ## Gobbler
 
