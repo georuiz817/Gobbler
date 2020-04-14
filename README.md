@@ -2,7 +2,7 @@
 
 ## Gobbler
 
-Hello and welcome to Gobbler! This was made for my final project with Flatiron School. Users can create a Thanksgiving dish. From there you can view everyones created dishes and like/view each individual dish. Recipes are optional and can be seen upon viewing a dish. Using React and Redux/Thunk for me personally was my favorite part of creating the project. Really being able to see the process of  action -> dispatch -> reducer -> state was a great learning expirence. A personal challenge of my during the project was updating the likes. We never learned the patch action when working with React/Redux so it was interesting to figure it out on my own and apply it to the project. Another thing I'd probably add down the road would be a delete function. Although that wouldn't fit into the public/non login porition of the site. It would be fun to implement. 
+Hello and welcome to Gobbler! This was made for my final project with Flatiron School. Users can create a Thanksgiving dish. From there you can view everyones created dishes and like/view each individual dish. Recipes are optional and can be seen upon viewing a dish. Using React and Redux/Thunk for me personally was my favorite part of creating the project. Really being able to see the process of  action -> dispatch -> reducer -> state was a great learning expirence. A personal challenge of my during the project was updating the likes. We never learned the patch action when working with React/Redux so it was interesting to figure it out on my own and apply it to the project. Another thing I'd probably add down the road would be a delete function. Although that wouldn't fit into the public/non login theme of the site. It would be fun to implement. 
 
 ## Prerequisites
 
