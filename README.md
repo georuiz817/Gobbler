@@ -1,21 +1,38 @@
-Hello and welcome to Gobbler! This was made for my final project with Flatiron University. Quick installation instructions are below. Also check out the project requirement checklist to get a feel of exactly what points the project hits. 
+![Website](/src/HomeImg.png)
 
-Specs: <br/>
-Front end: React/Redux <br/>
-Back end API: Rails, Postgres<br/>
-CSS: Bootstrap <br/>
+## Gobbler
 
-Installation guide: <br/>
-bundle install  <br/>
-rails db:create   <br/>
-rails db:migrate  <br/>
-cd into client    <br/>
-yarn install   <br/>
-cd ..   <br/>
-foreman start :) <br/>  
+Hello and welcome to Gobbler! This was made for my final project with Flatiron School. Users can create a Thanksgiving dish. From there you can view everyones created dishes and like/view each individual dish. Recipes are optional and can be seen upon viewing a dish. Using React and Redux/Thunk for me personally was my favorite part of creating the project. Really being able to see the process of  action -> dispatch -> reducer -> state was a great learning expirence. A personal challenge of my during the project was updating the likes. We never learned the patch action when working with React/Redux so it was interesting to figure it out on my own and apply it to the project. Another thing I'd probably add down the road would be a delete function. Although that wouldn't fit into the public/non login porition of the site. It would be fun to implement. 
 
+## Prerequisites
 
-Project Checklist:   
+• React    
+• Ruby/Rails  
+• Postgres  
+
+## Installing
+
+• Git Clone https://github.com/georuiz817/Gobbler.git
+• cd into project  
+• bundle install  
+• rails db:create  
+• rails db:migrate  
+• cd into client  
+• yarn install  
+• cd ..  
+• foreman start in terminal
+
+## Built With  
+• React/Redux
+• Rails/Postgres
+• Bootstrap
+
+## Authors
+
+• George Ruiz - Full Stack Web Developer
+
+## Project Checklist
+   
 • The code is written in ES6 as much as possible *  
   True  
 
