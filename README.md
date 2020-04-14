@@ -1,4 +1,4 @@
-![Website](/src/HomeImg.png)
+![Website](./src/HomeImg.png)
 
 ## Gobbler
 
@@ -6,8 +6,8 @@ Hello and welcome to Gobbler! This was made for my final project with Flatiron S
 
 ## Prerequisites
 
-• React    
-• Ruby/Rails  
+• React      
+• Ruby/Rails    
 • Postgres  
 
 ## Installing
