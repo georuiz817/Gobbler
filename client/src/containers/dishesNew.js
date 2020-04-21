@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { addDish } from '../actions/manageDish.js';
-
+import {Container, Row, Col} from 'react-bootstrap';
+import Form from 'react-bootstrap/Form'
 
 // define our local state w/ our constructor, these are the properties for a dish
 export class dishesNew extends Component {
@@ -44,23 +45,37 @@ export class dishesNew extends Component {
     render(){
         console.log(this.props)
           return(
-            <div className="dishesNewPage">
-              <h1>Create</h1>
-              <form id="dish-form" onSubmit={ this.handleSubmit }>
-                  <div  class="col-xs-4">
-                    <input placeholder='name'  class="form-control" type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} />
-                    <input placeholder='main'  class="form-control" type="text" name="main" id="main" value={this.state.main} onChange={this.handleChange} />
-                    <input placeholder='side one'  class="form-control" type="text" name="side_one" id="side_one" value={this.state.side_one} onChange={this.handleChange} />
-                    <input placeholder='side two'  class="form-control" type="text" name="side_two" id="side_two" value={this.state.side_two} onChange={this.handleChange} />
-                    <input placeholder='drink' class="form-control" type="text" name="drink" id="drink" value={this.state.drink} onChange={this.handleChange} />
-                    <textarea placeholder='recipe (optional)' class="form-control" rows="5" type="text" name="recipe" id="recipe" value={this.state.recipe} onChange={this.handleChange}/>
+            <Container>
+              <Col>
+              <h1>Create:</h1>
+              </Col>
+              <Form  onSubmit={ this.handleSubmit }>
+                  <Form.Group as={Col}>
+                    <Form.Control  placeholder='name' type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} />
+                  </Form.Group>
+                  <Form.Group  as={Col}>
+                    <Form.Control placeholder='main'  class="form-control" type="text" name="main" id="main" value={this.state.main} onChange={this.handleChange} />
+                  </Form.Group>
+                  <Form.Group  as={Col}>
+                    <Form.Control placeholder='side one'  class="form-control" type="text" name="side_one" id="side_one" value={this.state.side_one} onChange={this.handleChange} />
+                  </Form.Group>
+                  <Form.Group  as={Col}>
+                    <Form.Control placeholder='side two'  class="form-control" type="text" name="side_two" id="side_two" value={this.state.side_two} onChange={this.handleChange} />
+                  </Form.Group>
+                  <Form.Group  as={Col}>
+                    <Form.Control placeholder='drink' class="form-control" type="text" name="drink" id="drink" value={this.state.drink} onChange={this.handleChange} />
+                  </Form.Group>
+                  <Form.Group  as={Col}>
+                    <Form.Control placeholder='recipe (optional)' class="form-control" rows="5" type="text" name="recipe" id="recipe" value={this.state.recipe} onChange={this.handleChange}/>
+                  </Form.Group>
+                  <Form.Group  as={Col}>
                     <input class="btn btn-warning" type="submit" value="Create dish!" />
-                  </div>
-                </form>
-            </div>
+                  </Form.Group>
+              </Form>
+            </Container>
             )
+          }
         }
-    }
 
     //we are not connected to the store here. We not displaying any stored state.
     // however we need the action of addDish so were using the short cut for mapDispatchToProps 
