@@ -41,7 +41,8 @@ export class dishesNew extends Component {
         })
         this.props.history.push('/dishesIndex')
       }
-
+      
+    //bootstrapped form for mobile reponsiveness
     render(){
         console.log(this.props)
           return(
