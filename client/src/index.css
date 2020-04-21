@@ -2,8 +2,6 @@ body {
   text-align: center;
   font-family: "Segoe UI";
   color: black;
-
-  
 }
 
 /* centered navigation */
@@ -12,7 +10,7 @@ body {
   text-align: center;
   padding: 14px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 80%;
   border-radius: 5px;
   color:black;
 }
@@ -23,7 +21,7 @@ body {
 }
 
 .mainBlock p{
-  max-width: 500px;
+  max-width: 50%;
   font-size: 13px;
 }
 
@@ -63,6 +61,4 @@ body {
  margin-bottom: 1%;
 }
 
- .col-xs-4 input{
-  border-width: 0 0 1px;
-}
+

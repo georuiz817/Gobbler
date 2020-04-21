@@ -1,6 +1,6 @@
-//ahh our initial state, it is not mutable, will always remain the same
-// we can keep creating new state objects with our reducers we will have a neverending
-// spread operator of new and new state objects that wiill be saved 
+//initial state, it is not mutable, will always remain the same.
+//We can keep creating new state objects with our reducer which will have a never ending 
+//spread operator of new and new state objects that will be saved 
 const initialState = {
     dishes: [],
     loading: false,

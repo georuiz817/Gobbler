@@ -3,11 +3,11 @@ import { connect } from 'react-redux';
 import { addDish } from '../actions/manageDish.js';
 
 
-// define our local state w/ our constructor, these are the attributes for a dish
+// define our local state w/ our constructor, these are the properties for a dish
 export class dishesNew extends Component {
-    constructor(props) {
+  
+  constructor(props) {
         super(props);
-    
         this.state = {
           main: '',
           side_one: '',
@@ -16,20 +16,19 @@ export class dishesNew extends Component {
         }
       }
 
-
-  //whenever a value is put into a input on our form we will update the state
+//whenever a input value is changed we will update the target state
   handleChange = e => {
     const { name, value } = e.target;
     this.setState({
-      [name]: value
-       })
+          [name]: value
+        })
       }
 
-  //on submit in our form, once we hit submit we are running handlesubmit
+  //once we hit submit we are running handlesubmit
   //it will prevent the default and not send us anywhere astray 
-  //we will run our add dish action which will take in our current state and history
+  //we will run our addDish action which will take in our current state 
   //then we will set our local state back to a cleared form 
-  // we will then get pushed to our dishes index page to view all dishes
+  //then once all completed we will then get pushed to our dishes index page to view all dishes
     handleSubmit = e => {
         e.preventDefault();
         this.props.addDish(this.state, this.props.history)
@@ -42,8 +41,7 @@ export class dishesNew extends Component {
         this.props.history.push('/dishesIndex')
       }
 
-
-      render(){
+    render(){
         console.log(this.props)
           return(
             <div className="dishesNewPage">
@@ -64,7 +62,7 @@ export class dishesNew extends Component {
         }
     }
 
-    //we are not connected to the store here, not displaying any stored state
-    // however we need the action of adddish so were using the short cut for map
-    //dispatch to props 
+    //we are not connected to the store here. We not displaying any stored state.
+    // however we need the action of addDish so were using the short cut for mapDispatchToProps 
+    //and leaving MapState as null
     export default connect(null, { addDish })(dishesNew)

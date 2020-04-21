@@ -3,19 +3,14 @@ import { connect } from 'react-redux';
 import { getDish } from '../actions/manageDish.js';
 import snoopy from '../photos/snoopy.gif';
 
-
-
 export class dishShow extends Component {
-
-    //once the html is rendered to the dom we are grabbing the chosen dish by it's ID 
+  //once the html is rendered to the dom we are grabbing the chosen dish by it's ID 
     componentDidMount() {
         const id = this.props.match.params.id;
         this.props.getDish(id)
       }
-
-      // if it's our currentdish we are goin to display it's attributes 
-      // e;se if were currently not at our chosen dish yet (fetch not complete)
-      // we will display the loading message 
+      // if it's our currentdish we are goin to display its properties 
+      // else if were currently not at our chosen dish yet (fetch not complete) we will display the loading message 
       render() {
         if(this.props.currentDish ) {
           return (
@@ -34,18 +29,15 @@ export class dishShow extends Component {
       }
     }
 
-    //grabbing our current dish from our store 
+    //grabbing our current dish property from our store 
     const mapStateToProps = state => {
         return {
-           
-            currentDish: state.currentDish,
-            
-        }
-      }
+          currentDish: state.currentDish,
+            }
+          }
 
-
-      //mapped our current dish from our store to our current state, used shortcut
-      //to the mapdispatch to props of getdish
+//use the mapStateToProps function to take in a splice of our store
+// but use the mapDispatchToProps short-cut for getdish
 export default connect(mapStateToProps, { getDish })(dishShow);
 
 
