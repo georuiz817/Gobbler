@@ -11,7 +11,7 @@ class dishesIndex extends Component {
   }
  
   // if loading is false !/request to grab our dishes is complete. We will map the array of dishes in our state in a sentence w/ their properties
-  // we will also display the like container and give it a prop of dish. Else aka if loading is true, display the loading message
+  // we will also display the like container and give it a prop of disheselse aka if loading is true, display the loading message
   render() {
     if( !this.props.loading ) {
       const dishes = this.props.dishes.map(dish =>
@@ -32,12 +32,13 @@ class dishesIndex extends Component {
   };
 };
 
-// taking in our getDishes actions as a prop so we can use it in the container
+// taking in our get dishes actions as a prop so we can use it in the container
 function mapDispatchToProps(dispatch){
   return { getDishes: () => dispatch(getDishes()) }
 }
  
-// taking in a splice of our store as a prop so we can use it in the container via connect.
+// taking in a splice of stored state as a prop so we can use it in the container, 
+// via connect
 function mapStateToProps(state){
   return {dishes: state.dishes, loading: state.loading,}
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { addDish } from '../actions/manageDish.js';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Col} from 'react-bootstrap';
 import Form from 'react-bootstrap/Form'
 
 // define our local state w/ our constructor, these are the properties for a dish

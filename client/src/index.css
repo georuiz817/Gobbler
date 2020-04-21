@@ -46,13 +46,12 @@ body {
  }
 
  #list-item{
-   margin-bottom: 25px;
+   margin-bottom: 3%;
 }
 
 .dishList{
- 
   border-bottom: solid black 1px; 
-  margin-top: 20px;
+  margin-top: 2%;
 }
 
 
