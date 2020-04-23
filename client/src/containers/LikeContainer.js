@@ -16,7 +16,7 @@ class LikeContainer extends Component {
     render(){
       return(
         <div className="like-container-inline" >
-          <p>< LikeButton handleLike={this.handleLike} /></p>
+          <p><LikeButton handleLike={this.handleLike} /></p>
           <p>{this.props.dish.likes}</p>
         </div>
         )

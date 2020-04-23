@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { getDish } from '../actions/manageDish.js';
 import snoopy from '../photos/snoopy.gif';
+import {Container, Row, Col} from 'react-bootstrap';
 
 export class dishShow extends Component {
   //once the html is rendered to the dom we are grabbing the chosen dish by it's ID 
@@ -15,12 +16,14 @@ export class dishShow extends Component {
         if(this.props.currentDish ) {
           return (
             <div>
-               <h3>{this.props.currentDish.name} served {this.props.currentDish.main } with a side of {this.props.currentDish.side_one } and {this.props.currentDish.side_two }. Lastly a glass of {this.props.currentDish.drink }!</h3>
-               <br></br>
-               <h3>Recipe:</h3>
-               <br></br>
-               <p>{this.props.currentDish.recipe}</p> 
-               <img class="rounded" height="200px" src={snoopy} alt="n/a"/>
+              <Container>
+                <Col sm={12}>
+                  <h3>{this.props.currentDish.name} served {this.props.currentDish.main } with a side of {this.props.currentDish.side_one } and {this.props.currentDish.side_two }. Lastly a glass of {this.props.currentDish.drink }!</h3>
+                  <br></br>
+                  <p>{this.props.currentDish.recipe}</p> 
+                  <img class="rounded" height="200px" src={snoopy} alt="n/a"/>
+                </Col>
+               </Container>
             </div>
           )
         } else {

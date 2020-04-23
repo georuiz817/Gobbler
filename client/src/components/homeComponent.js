@@ -17,7 +17,7 @@ const homeComponent = () => {
                 <p>After the creation our your dish, something special happens. One of our listed sponsors will be donating your created dish to someone in need this Thanksgiving day. Enjoy your time knowing that you've given someone else the chanche too.</p>
             </Col>
             <Col sm={5}>
-                <img width='70%' src={Doggo}/>
+                <img alt='n/a' width='70%' src={Doggo}/>
             </Col>
         </Row>
     </Container>

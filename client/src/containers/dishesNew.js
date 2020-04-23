@@ -52,19 +52,19 @@ export class dishesNew extends Component {
               </Col>
               <Form  onSubmit={ this.handleSubmit }>
                   <Form.Group as={Col}>
-                    <Form.Control  placeholder='name' type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} />
+                    <Form.Control required  placeholder='name' type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} />
                   </Form.Group>
                   <Form.Group  as={Col}>
-                    <Form.Control placeholder='main'  class="form-control" type="text" name="main" id="main" value={this.state.main} onChange={this.handleChange} />
+                    <Form.Control required placeholder='main'  class="form-control" type="text" name="main" id="main" value={this.state.main} onChange={this.handleChange} />
                   </Form.Group>
                   <Form.Group  as={Col}>
-                    <Form.Control placeholder='side one'  class="form-control" type="text" name="side_one" id="side_one" value={this.state.side_one} onChange={this.handleChange} />
+                    <Form.Control required placeholder='side one'  class="form-control" type="text" name="side_one" id="side_one" value={this.state.side_one} onChange={this.handleChange} />
                   </Form.Group>
                   <Form.Group  as={Col}>
-                    <Form.Control placeholder='side two'  class="form-control" type="text" name="side_two" id="side_two" value={this.state.side_two} onChange={this.handleChange} />
+                    <Form.Control required placeholder='side two'  class="form-control" type="text" name="side_two" id="side_two" value={this.state.side_two} onChange={this.handleChange} />
                   </Form.Group>
                   <Form.Group  as={Col}>
-                    <Form.Control placeholder='drink' class="form-control" type="text" name="drink" id="drink" value={this.state.drink} onChange={this.handleChange} />
+                    <Form.Control required placeholder='drink' class="form-control" type="text" name="drink" id="drink" value={this.state.drink} onChange={this.handleChange} />
                   </Form.Group>
                   <Form.Group  as={Col}>
                     <Form.Control placeholder='recipe (optional)' class="form-control" rows="5" type="text" name="recipe" id="recipe" value={this.state.recipe} onChange={this.handleChange}/>
