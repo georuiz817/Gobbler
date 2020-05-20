@@ -1,2 +1,2 @@
-.ruby linguist-detectable=false
-.js linguist-detectable=true
+*.rb linguist-detectable=false
+*.js linguist-detectable=true
