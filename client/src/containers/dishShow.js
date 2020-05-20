@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { getDish } from '../actions/manageDish.js';
 import snoopy from '../photos/snoopy.gif';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Col} from 'react-bootstrap';
 
 export class dishShow extends Component {
   //once the html is rendered to the dom we are grabbing the chosen dish by it's ID 
