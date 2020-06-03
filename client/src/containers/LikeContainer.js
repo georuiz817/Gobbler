@@ -23,10 +23,4 @@ class LikeContainer extends Component {
       }
     }
     
-    const mapStateToProps = state => {
-      return {
-        dishes: state.dishes
-      }
-    }
-
-    export default connect(mapStateToProps,{ updateLikes })(LikeContainer)
+export default connect(state=>({dishes: state.dishes}),{ updateLikes })(LikeContainer)

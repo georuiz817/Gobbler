@@ -36,12 +36,4 @@ class dishesIndex extends Component {
   };
 };
 
-function mapDispatchToProps(dispatch){
-  return { getDishes: () => dispatch(getDishes()) }
-}
- 
-function mapStateToProps(state){
-  return {dishes: state.dishes, loading: state.loading,}
-}
- 
-export default connect(mapStateToProps, mapDispatchToProps)(dishesIndex)
+export default connect(state=>({dishes: state.dishes, loading: state.loading}), {getDishes})(dishesIndex)

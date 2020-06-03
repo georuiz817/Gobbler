@@ -31,13 +31,6 @@ export class dishShow extends Component {
       }
     }
 
-
-    const mapStateToProps = state => {
-        return {
-          currentDish: state.currentDish,
-            }
-          }
-
-export default connect(mapStateToProps, { getDish })(dishShow);
+export default connect(state=>({currentDish: state.currentDish}), { getDish })(dishShow);
 
 
