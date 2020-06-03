@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import homeComponent from './components/homeComponent.js';
 import Nav from './components/navComponent.js';
 import Errors from './components/errors.js';
-//import Footer from "/Users/dawn/gobbler-project/client/src/components/footer.js";
 import dishesNew from "./containers/dishesNew.js";
 import dishesIndex from "./containers/dishesIndex.js";
 import dishShow from './containers/dishShow.js';

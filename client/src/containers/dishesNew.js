@@ -4,7 +4,6 @@ import { addDish } from '../actions/manageDish.js';
 import {Container, Col} from 'react-bootstrap';
 import Form from 'react-bootstrap/Form'
 
-// define our local state w/ our constructor, these are the properties for a dish
 export class dishesNew extends Component {
   
   constructor(props) {
@@ -17,7 +16,6 @@ export class dishesNew extends Component {
         }
       }
 
-//whenever a input value is changed we will update the target state
   handleChange = e => {
     const { name, value } = e.target;
     this.setState({
@@ -25,11 +23,6 @@ export class dishesNew extends Component {
         })
       }
 
-  //once we hit submit we are running handlesubmit
-  //it will prevent the default and not send us anywhere astray 
-  //we will run our addDish action which will take in our current state 
-  //then we will set our local state back to a cleared form 
-  //then once all completed we will then get pushed to our dishes index page to view all dishes
     handleSubmit = e => {
         e.preventDefault();
         this.props.addDish(this.state, this.props.history)
@@ -42,7 +35,6 @@ export class dishesNew extends Component {
         this.props.history.push('/dishesIndex')
       }
       
-    //bootstrapped form for mobile reponsiveness
     render(){
         console.log(this.props)
           return(
@@ -78,7 +70,4 @@ export class dishesNew extends Component {
           }
         }
 
-    //we are not connected to the store here. We not displaying any stored state.
-    // however we need the action of addDish so were using the short cut for mapDispatchToProps 
-    //and leaving MapState as null
     export default connect(null, { addDish })(dishesNew)
