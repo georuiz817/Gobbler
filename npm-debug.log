@@ -1,0 +1,303 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\student\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   '@popperjs/core'
+1 verbose cli ]
+2 info using npm@2.14.15
+3 info using node@v12.16.1
+4 verbose install initial load of C:\Users\student\Desktop\Gobbler\package.json
+5 warn package.json heroku-ready-gob-react-rails@ No repository field.
+6 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\gud\package.json
+7 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\history\package.json
+8 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\hoist-non-react-statics\package.json
+9 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\invariant\package.json
+10 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\isarray\package.json
+11 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\js-tokens\package.json
+12 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\loose-envify\package.json
+13 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\mini-create-react-context\package.json
+14 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\object-assign\package.json
+15 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\path-to-regexp\package.json
+16 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\prop-types\package.json
+17 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\react-is\package.json
+18 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\react-redux\package.json
+19 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\react-router\package.json
+20 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\react-router-dom\package.json
+21 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\redux\package.json
+22 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\regenerator-runtime\package.json
+23 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\resolve-pathname\package.json
+24 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\symbol-observable\package.json
+25 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\tiny-invariant\package.json
+26 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\tiny-warning\package.json
+27 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\value-equal\package.json
+28 verbose installManyTop reading scoped package data from C:\Users\student\Desktop\Gobbler\node_modules\@babel\runtime\package.json
+29 verbose readDependencies loading dependencies from C:\Users\student\Desktop\Gobbler\package.json
+30 silly cache add args [ '@popperjs/core', null ]
+31 verbose cache add spec @popperjs/core
+32 silly cache add parsed spec Result {
+32 silly cache add   raw: '@popperjs/core',
+32 silly cache add   scope: '@popperjs',
+32 silly cache add   name: '@popperjs/core',
+32 silly cache add   rawSpec: '',
+32 silly cache add   spec: 'latest',
+32 silly cache add   type: 'tag'
+32 silly cache add }
+33 silly addNamed @popperjs/core@latest
+34 verbose addNamed "latest" is being treated as a dist-tag for @popperjs/core
+35 info addNameTag [ '@popperjs/core', 'latest' ]
+36 silly mapToRegistry name @popperjs/core
+37 silly mapToRegistry scope (from package name) @popperjs
+38 verbose mapToRegistry no registry URL found in name for scope @popperjs
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry uri https://registry.npmjs.org/@popperjs%2fcore
+42 verbose addNameTag registry:https://registry.npmjs.org/@popperjs%2fcore not in flight; fetching
+43 verbose request uri https://registry.npmjs.org/@popperjs%2fcore
+44 verbose request no auth needed
+45 info attempt registry request try #1 at 2:43:30 PM
+46 verbose request id 1c96e3a45df3842d
+47 http request GET https://registry.npmjs.org/@popperjs%2fcore
+48 http 200 https://registry.npmjs.org/@popperjs%2fcore
+49 verbose headers {
+49 verbose headers   date: 'Mon, 13 Jul 2020 18:43:25 GMT',
+49 verbose headers   'content-type': 'application/json',
+49 verbose headers   'transfer-encoding': 'chunked',
+49 verbose headers   connection: 'keep-alive',
+49 verbose headers   'set-cookie': [
+49 verbose headers     '__cfduid=de5cd59ba3100f0f1b5430d67934f0d0b1594665805; expires=Wed, 12-Aug-20 18:43:25 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax'
+49 verbose headers   ],
+49 verbose headers   'cf-ray': '5b2526466e9be720-EWR',
+49 verbose headers   age: '3871',
+49 verbose headers   'cache-control': 'public, max-age=300',
+49 verbose headers   etag: 'W/"2b665a7c6a9744598f71802297dd86f3"',
+49 verbose headers   'last-modified': 'Fri, 03 Jul 2020 07:51:57 GMT',
+49 verbose headers   vary: 'accept-encoding, accept',
+49 verbose headers   'cf-cache-status': 'HIT',
+49 verbose headers   'cf-request-id': '03eb163ffd0000e720c99ae200000001',
+49 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+49 verbose headers   server: 'cloudflare',
+49 verbose headers   'content-encoding': 'gzip'
+49 verbose headers }
+50 silly get cb [
+50 silly get   200,
+50 silly get   {
+50 silly get     date: 'Mon, 13 Jul 2020 18:43:25 GMT',
+50 silly get     'content-type': 'application/json',
+50 silly get     'transfer-encoding': 'chunked',
+50 silly get     connection: 'keep-alive',
+50 silly get     'set-cookie': [
+50 silly get       '__cfduid=de5cd59ba3100f0f1b5430d67934f0d0b1594665805; expires=Wed, 12-Aug-20 18:43:25 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax'
+50 silly get     ],
+50 silly get     'cf-ray': '5b2526466e9be720-EWR',
+50 silly get     age: '3871',
+50 silly get     'cache-control': 'public, max-age=300',
+50 silly get     etag: 'W/"2b665a7c6a9744598f71802297dd86f3"',
+50 silly get     'last-modified': 'Fri, 03 Jul 2020 07:51:57 GMT',
+50 silly get     vary: 'accept-encoding, accept',
+50 silly get     'cf-cache-status': 'HIT',
+50 silly get     'cf-request-id': '03eb163ffd0000e720c99ae200000001',
+50 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+50 silly get     server: 'cloudflare',
+50 silly get     'content-encoding': 'gzip'
+50 silly get   }
+50 silly get ]
+51 verbose get saving @popperjs/core to C:\Users\student\AppData\Roaming\npm-cache\registry.npmjs.org\_40popperjs_252fcore\.cache.json
+52 silly addNameTag next cb for @popperjs/core with tag latest
+53 silly addNamed @popperjs/core@2.4.4
+54 verbose addNamed "2.4.4" is a plain semver version for @popperjs/core
+55 silly mapToRegistry name @popperjs/core
+56 silly mapToRegistry scope (from package name) @popperjs
+57 verbose mapToRegistry no registry URL found in name for scope @popperjs
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/@popperjs%2fcore
+61 verbose addRemoteTarball https://registry.npmjs.org/@popperjs/core/-/core-2.4.4.tgz not in flight; adding
+62 verbose addRemoteTarball [
+62 verbose addRemoteTarball   'https://registry.npmjs.org/@popperjs/core/-/core-2.4.4.tgz',
+62 verbose addRemoteTarball   '11d5db19bd178936ec89cd84519c4de439574398'
+62 verbose addRemoteTarball ]
+63 info retry fetch attempt 1 at 2:43:30 PM
+64 info attempt registry request try #1 at 2:43:30 PM
+65 http fetch GET https://registry.npmjs.org/@popperjs/core/-/core-2.4.4.tgz
+66 http fetch 200 https://registry.npmjs.org/@popperjs/core/-/core-2.4.4.tgz
+67 silly fetchAndShaCheck shasum 11d5db19bd178936ec89cd84519c4de439574398
+68 verbose addTmpTarball C:\Users\student\AppData\Local\Temp\npm-10200-d24afa65\registry.npmjs.org\_40popperjs\core\-\core-2.4.4.tgz not in flight; adding
+69 verbose addTmpTarball already have metadata; skipping unpack for @popperjs/core@2.4.4
+70 silly cache afterAdd @popperjs/core@2.4.4
+71 verbose afterAdd C:\Users\student\AppData\Roaming\npm-cache\@popperjs\core\2.4.4\package\package.json not in flight; writing
+72 verbose afterAdd C:\Users\student\AppData\Roaming\npm-cache\@popperjs\core\2.4.4\package\package.json written
+73 silly install resolved [
+73 silly install resolved   {
+73 silly install resolved     name: '@popperjs/core',
+73 silly install resolved     version: '2.4.4',
+73 silly install resolved     description: 'Tooltip and Popover Positioning Engine',
+73 silly install resolved     main: 'dist/cjs/popper.js',
+73 silly install resolved     'main:umd': 'dist/umd/popper.js',
+73 silly install resolved     module: 'lib/popper.js',
+73 silly install resolved     unpkg: 'dist/umd/popper.min.js',
+73 silly install resolved     author: { name: 'Federico Zivolo', email: 'federico.zivolo@gmail.com' },
+73 silly install resolved     license: 'MIT',
+73 silly install resolved     repository: {
+73 silly install resolved       type: 'git',
+73 silly install resolved       url: 'git+https://github.com/popperjs/popper-core.git'
+73 silly install resolved     },
+73 silly install resolved     keywords: [
+73 silly install resolved       'tooltip',
+73 silly install resolved       'popover',
+73 silly install resolved       'dropdown',
+73 silly install resolved       'popup',
+73 silly install resolved       'popper',
+73 silly install resolved       'positioning engine'
+73 silly install resolved     ],
+73 silly install resolved     funding: {
+73 silly install resolved       type: 'opencollective',
+73 silly install resolved       url: 'https://opencollective.com/popperjs'
+73 silly install resolved     },
+73 silly install resolved     sideEffects: false,
+73 silly install resolved     scripts: {
+73 silly install resolved       clean: 'rimraf lib && rimraf dist && rimraf test/visual/dist',
+73 silly install resolved       test: 'yarn test:unit && yarn test:functional',
+73 silly install resolved       'test:unit': 'jest --coverage src',
+73 silly install resolved       'test:functional': 'DEV_PORT=`get-port` jest tests/functional',
+73 silly install resolved       'test:flow': 'flow',
+73 silly install resolved       'test:typescript': 'tsc --project tests/typescript/tsconfig.json',
+73 silly install resolved       'test:eslint': 'eslint .',
+73 silly install resolved       dev: "NODE_ENV=dev concurrently 'yarn serve' 'yarn build:dev --watch'",
+73 silly install resolved       serve: 'serve -l ${DEV_PORT:-5000} tests/visual',
+73 silly install resolved       build: 'yarn clean && yarn build:es && yarn build:esbrowser && yarn build:bundles && yarn build:flow && yarn build:typescript',
+73 silly install resolved       'build:es': "babel src -d lib --ignore '**/*.test.js','**/__mocks__'",
+73 silly install resolved       'build:esbrowser': 'BROWSER_COMPAT=true yarn build:es -d dist/esm',
+73 silly install resolved       'build:bundles': 'rollup -c .config/rollup.config.js',
+73 silly install resolved       'build:dev': 'NODE_ENV=dev babel src -d tests/visual/dist',
+73 silly install resolved       'build:flow': `flow-copy-source --ignore "**/*.test.js" src lib && replace-in-files --string=__DEV__ --replacement=false 'lib/**/*.flow'`,
+73 silly install resolved       'build:typescript': 'rimraf dist/typescript; flow-to-ts "src/**/*.js" --write --inline-utility-types; tsc-silent --project .config/tsconfig.json --createSourceFile .config/createSourceFile.js --suppress @; rimraf "src/**/*.ts"',
+73 silly install resolved       prepublishOnly: 'yarn build'
+73 silly install resolved     },
+73 silly install resolved     prettier: {
+73 silly install resolved       semi: true,
+73 silly install resolved       trailingComma: 'es5',
+73 silly install resolved       singleQuote: true,
+73 silly install resolved       proseWrap: 'always'
+73 silly install resolved     },
+73 silly install resolved     babel: { extends: './.config/babel.config' },
+73 silly install resolved     jest: { preset: './.config/jest.config' },
+73 silly install resolved     eslintConfig: { extends: './.config/eslint.config' },
+73 silly install resolved     husky: { hooks: [Object] },
+73 silly install resolved     devDependencies: {
+73 silly install resolved       '@ampproject/rollup-plugin-closure-compiler': '^0.25.2',
+73 silly install resolved       '@atomico/rollup-plugin-sizes': '^1.1.4',
+73 silly install resolved       '@babel/cli': '^7.8.3',
+73 silly install resolved       '@babel/core': '^7.7.5',
+73 silly install resolved       '@babel/plugin-transform-flow-strip-types': '^7.7.4',
+73 silly install resolved       '@babel/plugin-transform-runtime': '^7.7.6',
+73 silly install resolved       '@babel/preset-env': '^7.7.6',
+73 silly install resolved       '@fezvrasta/tsc-silent': '^1.3.0',
+73 silly install resolved       '@khanacademy/flow-to-ts': '^0.1.6',
+73 silly install resolved       '@rollup/plugin-babel': '^5.0.0',
+73 silly install resolved       '@rollup/plugin-replace': '^2.3.2',
+73 silly install resolved       'babel-eslint': '^10.0.3',
+73 silly install resolved       'babel-jest': '^25.5.1',
+73 silly install resolved       'babel-plugin-add-import-extension': '^1.3.0',
+73 silly install resolved       'babel-plugin-annotate-pure-calls': '^0.4.0',
+73 silly install resolved       'babel-plugin-dev-expression': '^0.2.2',
+73 silly install resolved       'babel-plugin-inline-replace-variables': '^1.3.1',
+73 silly install resolved       'babel-plugin-transform-inline-environment-variables': '^0.4.3',
+73 silly install resolved       concurrently: '^5.2.0',
+73 silly install resolved       dotenv: '^8.2.0',
+73 silly install resolved       eslint: '^6.8.0',
+73 silly install resolved       'eslint-plugin-flowtype': '^4.6.0',
+73 silly install resolved       'eslint-plugin-import': '^2.20.0',
+73 silly install resolved       'eslint-plugin-unused-imports': '^0.1.2',
+73 silly install resolved       'flow-bin': '^0.123.0',
+73 silly install resolved       'flow-copy-source': '^2.0.9',
+73 silly install resolved       'get-port-cli': '^2.0.0',
+73 silly install resolved       husky: '^4.2.1',
+73 silly install resolved       jest: '^25.5.1',
+73 silly install resolved       'jest-environment-jsdom-sixteen': '^1.0.3',
+73 silly install resolved       'jest-environment-puppeteer': '^4.4.0',
+73 silly install resolved       'jest-image-snapshot': '^3.1.0',
+73 silly install resolved       'jest-puppeteer': '^4.4.0',
+73 silly install resolved       poster: '^0.0.9',
+73 silly install resolved       prettier: '^2.0.5',
+73 silly install resolved       'pretty-quick': '^2.0.1',
+73 silly install resolved       puppeteer: '^3.0.2',
+73 silly install resolved       'replace-in-files-cli': '^0.3.1',
+73 silly install resolved       rollup: '^2.7.3',
+73 silly install resolved       'rollup-plugin-flow-entry': '^0.3.3',
+73 silly install resolved       'rollup-plugin-license': '^2.0.0',
+73 silly install resolved       'rollup-plugin-terser': '^5.2.0',
+73 silly install resolved       'rollup-plugin-visualizer': '^4.0.3',
+73 silly install resolved       serve: '^11.3.0',
+73 silly install resolved       typescript: '^3.7.5'
+73 silly install resolved     },
+73 silly install resolved     gitHead: 'e3c90278b635d67367ae9f9cf044241a7c41d8f4',
+73 silly install resolved     bugs: { url: 'https://github.com/popperjs/popper-core/issues' },
+73 silly install resolved     homepage: 'https://github.com/popperjs/popper-core#readme',
+73 silly install resolved     _id: '@popperjs/core@2.4.4',
+73 silly install resolved     _nodeVersion: '12.18.1',
+73 silly install resolved     _npmVersion: '6.14.5',
+73 silly install resolved     dist: {
+73 silly install resolved       integrity: 'sha512-1oO6+dN5kdIA3sKPZhRGJTfGVP4SWV6KqlMOwry4J3HfyD68sl/3KmG7DeYUzvN+RbhXDnv/D8vNNB8168tAMg==',
+73 silly install resolved       shasum: '11d5db19bd178936ec89cd84519c4de439574398',
+73 silly install resolved       tarball: 'https://registry.npmjs.org/@popperjs/core/-/core-2.4.4.tgz',
+73 silly install resolved       fileCount: 260,
+73 silly install resolved       unpackedSize: 1449653,
+73 silly install resolved       'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\n' +
+73 silly install resolved         'Version: OpenPGP.js v3.0.4\r\n' +
+73 silly install resolved         'Comment: https://openpgpjs.org\r\n' +
+73 silly install resolved         '\r\n' +
+73 silly install resolved         'wsFcBAEBCAAQBQJe/uOaCRA9TVsSAnZWagAA8gEP/3WviG/n4AolhOGWbZLF\n' +
+73 silly install resolved         'ajYISsDopnMB+tmvIyK83Ur4N9LMp9arBROM6BvRJ+RV0/47bszWE2SeBR9K\n' +
+73 silly install resolved         '1aCfS9oD7/oManY3osnEA/N6cp4hJ4J7gqFXyIqSAdDlCdR4Dv+xVVHYNhJP\n' +
+73 silly install resolved         '0kvMbCH7EQ9cph1KDutsbmowtq39vz4Bb8QP/qvkFMFRAATEjmlvBSF0679h\n' +
+73 silly install resolved         'DNKlwOlJHAES2AEzKoznVA3175CFWoGXztYEUkgbUJQeIwlSRU+SMGgabHyI\n' +
+73 silly install resolved         'wTpS+qLWWAEoqF26HuqXWIAoyXZox3a++WiEWVJo7WmvEb54TUdJ43ZhX+vX\n' +
+73 silly install resolved         'wvHqdTUHttIflVU3ctyGEyqAWZSAXIi/s8krn2oQwwKiePoxF1zauzTarE9a\n' +
+73 silly install resolved         'ZZInBppeUAeQfevjgWZN28+Wfxb6lU0Wfv8ctwCFIpbj0IMf6uKrsC/OwVOf\n' +
+73 silly install resolved         'Qgv6ehq2P/IvEnjQ4VwMF8vTMJwXyI5viLt+v8ESJqwlFMc1dLcBM8XhSXzY\n' +
+73 silly install resolved         '96NOJrrqn2dxQ03mFz8v9kXHHPvWnp7I80C2QAg50nknpye4g3+VrXM2M5pc\n' +
+73 silly install resolved         'qlLMkiXBM8d4/yyhVv96AD4KLe9BbmlJuWkpSltuLGi9/KObsSTQeq2ITgNT\n' +
+73 silly install resolved         'xCYKQPzDCWdIGBGZHmCJKRLbcNF8+NV48A6DAkb5ZpOPK6BKSXx+NyKoL7Cg\n' +
+73 silly install resolved         'eiRX\r\n' +
+73 silly install resolved         '=1Hih\r\n' +
+73 silly install resolved         '-----END PGP SIGNATURE-----\r\n'
+73 silly install resolved     },
+73 silly install resolved     maintainers: [ [Object] ],
+73 silly install resolved     _npmUser: { name: 'fezvrasta', email: 'federico.zivolo@gmail.com' },
+73 silly install resolved     directories: {},
+73 silly install resolved     _npmOperationalInternal: {
+73 silly install resolved       host: 's3://npm-registry-packages',
+73 silly install resolved       tmp: 'tmp/core_2.4.4_1593762713903_0.14969218232315495'
+73 silly install resolved     },
+73 silly install resolved     _hasShrinkwrap: false,
+73 silly install resolved     _shasum: '11d5db19bd178936ec89cd84519c4de439574398',
+73 silly install resolved     _resolved: 'https://registry.npmjs.org/@popperjs/core/-/core-2.4.4.tgz',
+73 silly install resolved     _from: '@popperjs/core@latest'
+73 silly install resolved   }
+73 silly install resolved ]
+74 info install @popperjs/core@2.4.4 into C:\Users\student\Desktop\Gobbler
+75 info installOne @popperjs/core@2.4.4
+76 verbose installOne of @popperjs/core to C:\Users\student\Desktop\Gobbler not in flight; installing
+77 verbose lock using C:\Users\student\AppData\Roaming\npm-cache\_locks\popperjs-core-ecf550b9b0847a8e.lock for C:\Users\student\Desktop\Gobbler\node_modules\@popperjs\core
+78 silly install write writing @popperjs/core 2.4.4 to C:\Users\student\Desktop\Gobbler\node_modules\@popperjs\core
+79 verbose stack ReferenceError: primordials is not defined
+79 verbose stack     at evalmachine.<anonymous>:35:5
+79 verbose stack     at Object.<anonymous> (C:\Users\student\AppData\Roaming\npm\node_modules\npm\node_modules\cmd-shim\node_modules\graceful-fs\fs.js:11:1)
+79 verbose stack     at Module._compile (internal/modules/cjs/loader.js:1158:30)
+79 verbose stack     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+79 verbose stack     at Module.load (internal/modules/cjs/loader.js:1002:32)
+79 verbose stack     at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+79 verbose stack     at Module.require (internal/modules/cjs/loader.js:1044:19)
+79 verbose stack     at require (internal/modules/cjs/helpers.js:77:18)
+79 verbose stack     at Object.<anonymous> (C:\Users\student\AppData\Roaming\npm\node_modules\npm\node_modules\cmd-shim\node_modules\graceful-fs\graceful-fs.js:3:27)
+79 verbose stack     at Module._compile (internal/modules/cjs/loader.js:1158:30)
+80 verbose cwd C:\Users\student\Desktop\Gobbler
+81 error Windows_NT 10.0.17134
+82 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\student\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "i" "@popperjs/core"
+83 error node v12.16.1
+84 error npm  v2.14.15
+85 error primordials is not defined
+86 error If you need help, you may report this error at:
+86 error     <https://github.com/npm/npm/issues>
+87 verbose exit [ 1, true ]
